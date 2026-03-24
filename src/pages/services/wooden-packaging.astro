@@ -1,0 +1,279 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import CtaBanner from '../../components/CtaBanner.astro';
+import Footer from '../../components/Footer.astro';
+---
+<BaseLayout title="Wooden Packaging | R. West & Son">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="hero-gradient min-h-[60vh] flex items-center justify-center relative overflow-hidden hero-dots">
+    <div class="absolute inset-0 z-[5] pointer-events-none opacity-60 md:opacity-30" style="background: radial-gradient(ellipse 50% 70% at center, rgba(253,249,243,0.95) 0%, rgba(253,249,243,0.8) 40%, rgba(253,249,243,0) 100%);"></div>
+    <div class="relative z-10 text-center max-w-4xl mx-auto px-6 py-32">
+      <div class="inline-flex items-center gap-2 bg-primary-container/10 px-4 py-1 rounded-full mb-8">
+        <span class="text-primary font-label text-xs font-bold uppercase tracking-wider">&#9733; Crates, Cases &amp; Pallets</span>
+      </div>
+      <h1 class="font-headline text-5xl md:text-7xl lg:text-[5.5rem] tracking-tighter leading-[0.9] mb-8">
+        One crate or a hundred. <span class="grad-maroon-text serif-italic">Same care.</span>
+      </h1>
+      <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+        You've got something that needs protecting. A bronze sculpture heading to a gallery in New York. A pallet run of components for a production line. Your grandmother's piano that can't arrive damaged.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="grad-maroon-bg text-on-primary px-8 py-3.5 rounded-full font-label text-base font-bold uppercase tracking-widest hover:scale-105 transition-transform inline-block text-center">Get a Packaging Quote</a>
+        <a href="tel:01752664345" class="border-2 border-primary-container/20 text-primary px-8 py-3.5 rounded-full font-label text-base font-bold uppercase tracking-widest hover:bg-surface-container-low transition-colors inline-block text-center">Call Jason</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Build -->
+  <section class="py-24 px-8 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+      <div class="anim-up">
+        <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">What We Build</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none mb-8">
+          Crates, cases, and pallets. <span class="grad-maroon-text italic">Each one made to measure.</span>
+        </h2>
+        <p class="text-on-surface-variant text-lg leading-relaxed mb-6">
+          There's a difference, by the way. A packing case is a fully enclosed box with plywood sides, solid construction, sealed against the elements. A packing crate has a slatted frame and open sides, built for items that need ventilation or where weight matters. Most people use the words interchangeably. We don't, because the wrong choice means the wrong protection.
+        </p>
+        <p class="text-on-surface-variant text-lg leading-relaxed">
+          Our workshop at Ocean Quay handles everything. A single case small enough for jewellery, or crates large enough for industrial machinery. Pallets designed to the exact footprint of your goods. Heavy-duty skid-mounted bases for equipment that weighs more than a car.
+        </p>
+      </div>
+      <div class="space-y-4 anim-up">
+        <div class="rounded-lg overflow-hidden mb-4 img-zoom">
+          <img class="w-full h-auto object-cover aspect-[4/3]" alt="Custom wooden packing crates built at R. West & Son" src="/images/wooden-crates-01.jpg" />
+        </div>
+        <div class="bg-surface p-6 rounded-lg flex items-start gap-5 border-l-4 border-primary-container">
+          <span class="material-symbols-outlined text-primary-container text-3xl mt-1">package_2</span>
+          <div>
+            <h3 class="font-headline text-lg mb-1">Packing Cases</h3>
+            <p class="text-on-surface-variant text-base leading-relaxed">Fully enclosed plywood construction, sealed against the elements. For items that need total protection.</p>
+          </div>
+        </div>
+        <div class="bg-surface p-6 rounded-lg flex items-start gap-5 border-l-4 border-primary-container">
+          <span class="material-symbols-outlined text-primary-container text-3xl mt-1">grid_view</span>
+          <div>
+            <h3 class="font-headline text-lg mb-1">Packing Crates</h3>
+            <p class="text-on-surface-variant text-base leading-relaxed">Slatted timber frame, open sides. For items needing ventilation or where weight matters.</p>
+          </div>
+        </div>
+        <div class="bg-surface p-6 rounded-lg flex items-start gap-5 border-l-4 border-primary-container">
+          <span class="material-symbols-outlined text-primary-container text-3xl mt-1">view_in_ar</span>
+          <div>
+            <h3 class="font-headline text-lg mb-1">Pallets &amp; Skid Bases</h3>
+            <p class="text-on-surface-variant text-base leading-relaxed">Designed to the exact footprint. Standard pallets, heavy-duty skid-mounted bases, and everything in between.</p>
+          </div>
+        </div>
+        <div class="bg-surface-container-low border border-outline-variant/30 p-6 rounded-lg">
+          <p class="text-on-surface-variant text-sm leading-relaxed">
+            <span class="font-headline font-bold text-on-surface">ISPM15 as standard.</span> All timber is heat-treated and ISPM15-compliant. If your crate is going overseas, it's already export-ready.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How a Crate Gets Made -->
+  <section class="py-24 px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-16 anim-up">
+        <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">The Process</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+          How a crate <span class="grad-maroon-text italic">gets made.</span>
+        </h2>
+      </div>
+
+      <!-- Full-width process image -->
+      <div class="rounded-lg overflow-hidden mb-12 img-zoom">
+        <img class="w-full h-auto object-cover aspect-[21/9]" alt="Two men lifting a wooden packing case at R. West & Son" src="/images/fb-team-packing.jpg" />
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 anim-stagger">
+        <!-- Step 1 -->
+        <div class="relative anim-up">
+          <div class="flex items-center gap-3 mb-5">
+            <span class="grad-maroon-bg text-on-primary w-10 h-10 rounded-full flex items-center justify-center font-headline text-lg font-bold">1</span>
+            <h3 class="font-headline text-xl">Assessment</h3>
+          </div>
+          <p class="text-on-surface-variant text-base leading-relaxed">
+            We look at what you're shipping, sometimes on site, sometimes from measurements and photos you send us. A 200kg bronze sculpture and a rack of server equipment need completely different approaches, even if they weigh the same.
+          </p>
+        </div>
+        <!-- Step 2 -->
+        <div class="relative anim-up">
+          <div class="flex items-center gap-3 mb-5">
+            <span class="grad-maroon-bg text-on-primary w-10 h-10 rounded-full flex items-center justify-center font-headline text-lg font-bold">2</span>
+            <h3 class="font-headline text-xl">Design</h3>
+          </div>
+          <p class="text-on-surface-variant text-base leading-relaxed">
+            Every crate is designed around the item, not the other way round. Internal supports, foam inserts cut by our CNC router to the exact profile, moisture protection where needed. If it shouldn't move a millimetre in transit, it won't.
+          </p>
+        </div>
+        <!-- Step 3 -->
+        <div class="relative anim-up">
+          <div class="flex items-center gap-3 mb-5">
+            <span class="grad-maroon-bg text-on-primary w-10 h-10 rounded-full flex items-center justify-center font-headline text-lg font-bold">3</span>
+            <h3 class="font-headline text-xl">Build</h3>
+          </div>
+          <p class="text-on-surface-variant text-base leading-relaxed">
+            Timber and plywood, cut and assembled in our Plymouth workshop. We don't outsource the build. The same team that designs the crate nails it together.
+          </p>
+        </div>
+        <!-- Step 4 -->
+        <div class="relative anim-up">
+          <div class="flex items-center gap-3 mb-5">
+            <span class="grad-maroon-bg text-on-primary w-10 h-10 rounded-full flex items-center justify-center font-headline text-lg font-bold">4</span>
+            <h3 class="font-headline text-xl">Pack</h3>
+          </div>
+          <p class="text-on-surface-variant text-base leading-relaxed">
+            Your item goes in. Secured, cushioned, sealed. If it needs silica desiccant for moisture or foil barrier bags for corrosion protection, they go in too.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Small Jobs Nobody Else Wants -->
+  <section class="py-24 px-8">
+    <div class="bg-[#4A0D19] rounded-lg p-12 md:p-24 max-w-7xl mx-auto text-on-primary relative overflow-hidden">
+      <div class="relative z-10 max-w-3xl">
+        <span class="inline-block bg-surface/20 text-surface px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Every Job Matters</span>
+        <h2 class="font-headline text-4xl md:text-5xl tracking-tighter leading-tight mb-8">
+          The small jobs <span class="text-primary-fixed-dim italic">nobody else wants.</span>
+        </h2>
+        <p class="text-on-primary/80 text-lg leading-relaxed mb-6">
+          Most packaging companies would rather do a hundred pallets than one custom case. Volume work pays better. Setup time is the same whether you're building one crate or fifty.
+        </p>
+        <p class="text-on-primary/80 text-lg leading-relaxed mb-6">
+          We don't think like that.
+        </p>
+        <p class="text-on-primary/80 text-lg leading-relaxed mb-8">
+          One of the most unique things about this workshop is that we're genuinely comfortable with small batches and low volumes. One crate? Fine. Three pallets for a prototype run? No problem. A case for your auction purchase that you need collected from your living room? We'll be there with our own van.
+        </p>
+
+        <div class="bg-white/5 backdrop-blur p-8 rounded-lg border border-white/10">
+          <blockquote class="font-headline text-xl italic leading-snug text-white mb-4">
+            "R. West & Son went above and beyond. Services normally classified as an extra by other companies were included."
+          </blockquote>
+          <div class="border-t border-white/20 pt-4">
+            <p class="font-label font-bold uppercase tracking-widest text-white text-xs">Chris Owen</p>
+            <p class="text-white/60 text-xs">European Vice President, Sagittarius Sporting Goods</p>
+          </div>
+        </div>
+
+        <p class="text-on-primary/60 text-base leading-relaxed mt-8 italic">
+          We've built single crates for people who never called again. We gave them the same attention as our biggest accounts.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Trusts Us -->
+  <section class="py-24 px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-16 anim-up">
+        <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Trusted By</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+          Who trusts us with <span class="grad-maroon-text italic">their goods.</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 anim-stagger">
+        <div class="bg-surface-container-low p-8 rounded-lg border-l-4 border-primary-container anim-up">
+          <p class="text-on-surface-variant text-lg leading-relaxed mb-4">
+            Geoff Lewis at Datum Alloys trusts us with specialist metals. Steve Broadstock at British Fly Reels called the whole experience "one less headache to deal with." The Fowey River Gallery sends us artwork that can't be replaced at any price.
+          </p>
+        </div>
+        <div class="bg-surface-container-low p-8 rounded-lg border-l-4 border-primary-container anim-up">
+          <p class="text-on-surface-variant text-lg leading-relaxed mb-4">
+            But you don't need to be a big name. Most of our customers aren't. They're people with one item, one shipment, one thing they care about getting right. And they get the same attention as a container of marine engines.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Materials and Methods -->
+  <section class="py-24 px-8 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-16 anim-up">
+        <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Materials</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+          Materials and <span class="grad-maroon-text italic">methods.</span>
+        </h2>
+      </div>
+
+      <!-- Materials image grid -->
+      <div class="grid grid-cols-2 gap-4 mb-12">
+        <div class="rounded-lg overflow-hidden img-zoom">
+          <img class="w-full h-auto object-cover aspect-square" alt="Stacked timber at R. West & Son workshop" src="/images/fb-ispm15-crates.jpg" />
+        </div>
+        <div class="rounded-lg overflow-hidden img-zoom">
+          <img class="w-full h-auto object-cover aspect-square" alt="Wood grain closeup showing timber quality" src="/images/fb-foam-insert-grid.jpg" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 anim-stagger">
+        <div class="bg-surface p-8 rounded-lg anim-up">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="material-symbols-outlined text-primary-container text-3xl">forest</span>
+            <h3 class="font-headline text-xl">Timber</h3>
+          </div>
+          <p class="text-on-surface-variant text-base leading-relaxed">
+            Heat-treated softwood, ISPM15-stamped. Renewable, biodegradable, strong. Wood absorbs shock better than steel or plastic. It's been the material of choice for protective packaging for longer than anyone alive can remember.
+          </p>
+        </div>
+        <div class="bg-surface p-8 rounded-lg anim-up">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="material-symbols-outlined text-primary-container text-3xl">layers</span>
+            <h3 class="font-headline text-xl">Plywood</h3>
+          </div>
+          <p class="text-on-surface-variant text-base leading-relaxed">
+            For enclosed cases and panels where you need smooth, consistent surfaces. Resistant to splitting, lighter than solid timber panel-for-panel.
+          </p>
+        </div>
+        <div class="bg-surface p-8 rounded-lg anim-up">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="material-symbols-outlined text-primary-container text-3xl">precision_manufacturing</span>
+            <h3 class="font-headline text-xl">CNC-Cut Foam Inserts</h3>
+          </div>
+          <p class="text-on-surface-variant text-base leading-relaxed">
+            Our router cuts closed-cell foam to the exact three-dimensional profile of your item. The foam cradles the object so precisely that movement in transit is essentially zero. No rattling. No shifting. No gaps stuffed with bubble wrap and hope.
+          </p>
+        </div>
+        <div class="bg-surface p-8 rounded-lg anim-up">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="material-symbols-outlined text-primary-container text-3xl">water_drop</span>
+            <h3 class="font-headline text-xl">Moisture Protection</h3>
+          </div>
+          <p class="text-on-surface-variant text-base leading-relaxed">
+            Silica desiccant sachets absorb humidity inside sealed cases. Foil barrier bags create a vapour-tight envelope around items susceptible to corrosion. Essential for anything metal going on a sea crossing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-12 px-8">
+    <div class="grad-maroon-bg rounded-lg p-12 md:p-20 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 relative overflow-hidden anim-scale">
+      <div class="relative z-10 max-w-2xl text-center md:text-left">
+        <h2 class="font-headline text-5xl md:text-7xl text-white tracking-tighter leading-none mb-6">
+          Tell us what you're <span class="text-primary-fixed-dim italic">shipping.</span>
+        </h2>
+        <p class="text-white/80 text-xl md:text-2xl font-headline mb-10">One crate or a hundred. A sculpture or a factory. Something precious or something heavy. Whatever it is, we'll design a case around it and build it in our Plymouth workshop.</p>
+        <div class="flex flex-col sm:flex-row gap-5">
+          <a href="/contact" class="bg-white text-[#69001c] px-12 py-5 rounded-full font-label text-base font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-lg inline-block text-center">Start Your Quote</a>
+          <a href="tel:01752664345" class="border-2 border-white/40 text-white px-12 py-5 rounded-full font-label text-base font-bold uppercase tracking-widest hover:bg-white/15 transition-colors inline-block text-center">Call Jason</a>
+        </div>
+      </div>
+      <div class="relative z-10 w-full md:w-1/3">
+        <img class="w-full drop-shadow-2xl translate-y-8 rounded-lg" alt="Custom wooden crate by R. West & Son" src="/images/cta-crates.jpg" />
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>

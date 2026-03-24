@@ -1,0 +1,123 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import CtaBanner from '../components/CtaBanner.astro';
+import Footer from '../components/Footer.astro';
+
+const posts = [
+  {
+    title: "ISPM15 Explained in Plain English",
+    excerpt: "What it is, who needs it, and what happens if you ship without it. The international timber treatment standard, decoded for people who just need to get something shipped.",
+    icon: "gavel",
+    tag: "Regulations",
+  },
+  {
+    title: "Packing Case vs Packing Crate: What's the Difference?",
+    excerpt: "They're not the same thing, and the distinction matters for your item's safety. When you need a case, when you need a crate, and why.",
+    icon: "inventory_2",
+    tag: "Packaging",
+  },
+  {
+    title: "CNC Routing: What It Means for Your Packaging",
+    excerpt: "How computer-controlled cutting transforms foam and timber into precision-fit protection for fragile and high-value items.",
+    icon: "precision_manufacturing",
+    tag: "Technology",
+  },
+  {
+    title: "Why Timber Still Beats Plastic for Protective Packaging",
+    excerpt: "The materials science behind why wood remains the go-to choice for protecting valuable, heavy, and fragile goods in transit.",
+    icon: "forest",
+    tag: "Materials",
+  },
+  {
+    title: "How We Pack Artwork for International Shipping",
+    excerpt: "Bronze sculptures for international galleries. Family heirlooms crossing continents. A look at how we protect irreplaceable pieces.",
+    icon: "palette",
+    tag: "Case Study",
+  },
+  {
+    title: "Behind the Scenes: How a Custom Crate Gets Designed and Built",
+    excerpt: "The first phone call to the finished crate on the truck. A step-by-step look at the process behind every custom build at Ocean Quay.",
+    icon: "construction",
+    tag: "Workshop",
+  },
+  {
+    title: "Export Packing After Brexit: What's Changed",
+    excerpt: "New documentation requirements, customs declarations, and timber treatment rules. What exporters need to know now that the UK has left the EU.",
+    icon: "public",
+    tag: "Regulations",
+  },
+  {
+    title: "How to Prepare Your Goods for Collection",
+    excerpt: "A practical guide to getting your items ready before we arrive. What to do, what not to worry about, and how to make collection day run smoothly.",
+    icon: "local_shipping",
+    tag: "Guides",
+  },
+  {
+    title: "What to Look for in a Packaging Company (and What to Avoid)",
+    excerpt: "Not all packaging companies are the same. What to check before you hand over something valuable, including certifications, insurance, and communication.",
+    icon: "verified_user",
+    tag: "Advice",
+  },
+];
+---
+<BaseLayout title="Insights | R. West & Son">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="bg-surface-container-low py-32 px-8">
+    <div class="max-w-7xl mx-auto text-center">
+      <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-8 anim-up">From the Workshop</span>
+      <h1 class="font-headline text-5xl md:text-7xl tracking-tighter leading-[0.9] mb-8 anim-up">
+        What we've <span class="grad-maroon-text italic">learned</span> since 1910
+      </h1>
+      <p class="text-on-surface-variant text-lg md:text-xl max-w-3xl mx-auto leading-relaxed anim-up">
+        We've packed bronze sculptures for international galleries and relocated a factory to China. We built Antarctic ration boxes to a design from 1912. When we write about packaging, it's from the workshop floor.
+      </p>
+    </div>
+  </section>
+
+  <!-- Intro context -->
+  <section class="py-24 px-8 max-w-7xl mx-auto">
+    <div class="max-w-3xl mx-auto text-center anim-up">
+      <p class="text-on-surface-variant text-lg leading-relaxed mb-6">
+        This is where we share what we know. Export regulations that catch people out. The materials science behind why timber still beats plastic. What actually happens inside a crate during a six-week sea voyage. Plus the occasional behind-the-scenes look at an interesting project.
+      </p>
+      <p class="text-on-surface-variant text-lg leading-relaxed">
+        No marketing fluff. Just useful things, written by the people who do the work.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="pb-24 px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-16">
+        <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Latest Posts</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+          Practical knowledge, <span class="grad-maroon-text italic">no fluff.</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 anim-stagger">
+        {posts.map((post) => (
+          <article class="bg-white rounded-lg overflow-hidden shadow-[0_20px_40px_rgba(139,113,114,0.08)] hover:shadow-[0_25px_50px_rgba(139,113,114,0.14)] transition-all duration-300 hover:-translate-y-1 flex flex-col anim-up">
+            <div class="bg-surface-container-low p-8 flex items-center justify-center">
+              <span class="material-symbols-outlined text-primary text-5xl">{post.icon}</span>
+            </div>
+            <div class="p-8 flex flex-col flex-1">
+              <span class="inline-block self-start bg-surface-container-low text-on-surface-variant px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">{post.tag}</span>
+              <h3 class="font-headline text-xl tracking-tight leading-snug mb-4">{post.title}</h3>
+              <p class="text-on-surface-variant text-base leading-relaxed flex-1 mb-6">{post.excerpt}</p>
+              <a href="#" class="grad-maroon-text font-label text-xs font-bold uppercase tracking-widest border-b-2 border-primary-container pb-1 self-start hover:border-primary transition-colors">
+                Read more
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CtaBanner />
+  <Footer />
+</BaseLayout>

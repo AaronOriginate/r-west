@@ -1,0 +1,427 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import CtaBanner from '../components/CtaBanner.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="Our Work | R. West & Son">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="pt-40 pb-24 px-8 hero-gradient relative hero-dots">
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+      <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-8">Case Studies</span>
+      <h1 class="font-headline text-5xl md:text-7xl lg:text-[5.5rem] tracking-tighter leading-[0.9] mb-8">
+        Problems We've <span class="grad-maroon-text serif-italic">Solved</span>
+      </h1>
+      <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-6">
+        Every crate we build starts with someone's problem. A sculpture that can't be scratched. A factory that needs to cross an ocean. Medical equipment that has to arrive in India working exactly as it left Plymouth.
+      </p>
+      <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+        These are six of those problems. And how we solved them.
+      </p>
+    </div>
+  </section>
+
+  <!-- Case Study 1: Bronze Sculpture -->
+  <section class="py-24 px-8 bg-surface">
+    <div class="max-w-6xl mx-auto anim-up">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-5">
+          <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Fine Art</span>
+          <h2 class="font-headline text-3xl md:text-5xl tracking-tighter leading-none mb-8">
+            "Handle Sophie <span class="grad-maroon-text italic">carefully.</span>"
+          </h2>
+          <div class="rounded-lg overflow-hidden img-zoom">
+            <img class="w-full h-auto object-cover aspect-[4/3]" alt="CNC-cut foam insert profiled for a bronze sculpture at R. West & Son" src="/images/fb-foam-insert-angle.jpg" />
+          </div>
+        </div>
+        <div class="md:col-span-7">
+          <div class="case-accordion">
+            <details open>
+              <summary>
+                <span>The problem</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">
+                  Sophie is a bronze resin sculpture, 600 x 600 x 600mm. An Australian family fell in love with her at Fowey River Gallery and wanted her sitting in their garden, back in Australia. That's a long way for something that can't take a knock.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span>What we did</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">
+                  CNC-cut foam insert profiled to Sophie's exact shape. A plywood case with internal bracing designed for the weight. The foam cradled the sculpture so completely that it couldn't move a millimetre in any direction. Sealed, documented, shipped to Australia.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span>The result</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">Sophie arrived without a mark. She's in an Australian garden now.</p>
+              </div>
+            </details>
+          </div>
+          <div class="case-quote mt-8">
+            <blockquote class="font-headline text-lg italic leading-snug text-on-surface">
+              "Excellent service from start to finish. The sculpture was packed beautifully and arrived in perfect condition."
+            </blockquote>
+            <p class="font-label text-sm font-bold text-primary mt-3">Fowey River Gallery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study 2: Factory Relocation -->
+  <section class="py-24 px-8 bg-surface-container-low">
+    <div class="max-w-6xl mx-auto anim-up">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-5">
+          <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Industrial</span>
+          <h2 class="font-headline text-3xl md:text-5xl tracking-tighter leading-none mb-8">
+            "We're moving the factory to China. <span class="grad-maroon-text italic">All of it.</span>"
+          </h2>
+          <div class="rounded-lg overflow-hidden img-zoom">
+            <img class="w-full h-auto object-cover aspect-[4/3]" alt="Loading crates for international shipping at R. West & Son" src="/images/fb-loading-lorry.jpg" />
+          </div>
+        </div>
+        <div class="md:col-span-7">
+          <div class="case-accordion">
+            <details open>
+              <summary>
+                <span>The problem</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">
+                  Sagittarius Sporting Goods needed to move their manufacturing facility from Falmouth to Xiamen, China. Not a few pallets. The whole factory. Machinery, precision tools, components, the lot.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span>What we did</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">
+                  Manufactured specialised pallets and crates. Coordinated freight forwarders, crane hire, heavy equipment logistics. Handled excess equipment sales and factory clearance. The entire move managed as a single project, start to finish.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span>The result</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">Factory relocated. Everything arrived in Xiamen intact.</p>
+              </div>
+            </details>
+          </div>
+          <div class="case-quote mt-8">
+            <blockquote class="font-headline text-lg italic leading-snug text-on-surface">
+              "Services that are normally classified as an 'extra' by other companies were included. What was in theory a difficult task for us was in reality made so much easier, solely as a direct result of your efforts."
+            </blockquote>
+            <p class="font-label text-sm font-bold text-primary mt-3">Chris Owen</p>
+            <p class="text-outline text-xs">European Vice President, Sagittarius Sporting Goods</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study 3: Medical Equipment to India -->
+  <section class="py-24 px-8 bg-surface">
+    <div class="max-w-6xl mx-auto anim-up">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-5">
+          <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Medical</span>
+          <h2 class="font-headline text-3xl md:text-5xl tracking-tighter leading-none mb-8">
+            "This equipment saves lives <span class="grad-maroon-text italic">where it's going.</span>"
+          </h2>
+          <div class="rounded-lg overflow-hidden img-zoom">
+            <img class="w-full h-auto object-cover aspect-[4/3]" alt="Custom wooden crate with foam insert for medical equipment" src="/images/fb-industrial-equipment.jpg" />
+          </div>
+        </div>
+        <div class="md:col-span-7">
+          <div class="case-accordion">
+            <details open>
+              <summary>
+                <span>The problem</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">
+                  An Indian doctor was shipping an X-Ray machine and an anaesthetic machine to India at his own expense, for use in underprivileged regions. The equipment was collected from Derriford Hospital in Plymouth. It had to arrive working.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span>What we did</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">
+                  Collected from Derriford. Custom cases with internal bracing matched to each machine. Foam inserts cut to profile. Full moisture protection with foil barrier bags and desiccant sachets. ISPM15-compliant timber. Packing finished within a few days.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span>The result</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">Both machines arrived in India functioning.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study 4: Antarctic Ration Boxes -->
+  <section class="py-24 px-8 bg-surface-container-low">
+    <div class="max-w-6xl mx-auto anim-up">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-5">
+          <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Heritage</span>
+          <h2 class="font-headline text-3xl md:text-5xl tracking-tighter leading-none mb-8">
+            Ration boxes for <span class="grad-maroon-text italic">Antarctica.</span>
+          </h2>
+          <div class="rounded-lg overflow-hidden img-zoom">
+            <img class="w-full h-auto object-cover aspect-[4/3]" alt="Wooden ration boxes built to original specification at R. West & Son" src="/images/cta-crates.jpg" />
+          </div>
+        </div>
+        <div class="md:col-span-7">
+          <div class="case-accordion">
+            <details open>
+              <summary>
+                <span>The problem</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">
+                  Andrew Lusk & Co supply ration boxes for Antarctic expeditions. The design hasn't changed since Scott's time. Rope handles, ribbon ties, metal edging, hinged lid. These boxes need to survive temperatures of minus 50 and keep people alive in a survival situation.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span>What we did</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">
+                  Built between 20 and 200 boxes annually for over a decade. Same specification, same construction, same materials proven across more than a century of polar expeditions.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span>The result</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">10+ years of boxes. All still going to Antarctica.</p>
+              </div>
+            </details>
+          </div>
+          <div class="case-quote mt-8">
+            <blockquote class="font-headline text-lg italic leading-snug text-on-surface">
+              "The standard of product and finish is a very important consideration in these ration boxes as their contents may have to keep people alive in a survival situation. R. West & Son have always maintained the standard of workmanship required."
+            </blockquote>
+            <p class="font-label text-sm font-bold text-primary mt-3">Keith Preston</p>
+            <p class="text-outline text-xs">Andrew Lusk & Co</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study 5: Mixing Consoles -->
+  <section class="py-24 px-8 bg-surface">
+    <div class="max-w-6xl mx-auto anim-up">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-5">
+          <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Audio</span>
+          <h2 class="font-headline text-3xl md:text-5xl tracking-tighter leading-none mb-8">
+            Mixing consoles <span class="grad-maroon-text italic">across Europe.</span>
+          </h2>
+          <div class="rounded-lg overflow-hidden img-zoom">
+            <img class="w-full h-auto object-cover aspect-[4/3]" alt="Custom packaging for professional audio equipment" src="/images/fb-large-crates-workshop.jpg" />
+          </div>
+        </div>
+        <div class="md:col-span-7">
+          <div class="case-accordion">
+            <details open>
+              <summary>
+                <span>The problem</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">
+                  Studio Systems distributes used recording studio mixing consoles across Europe. Fragile, heavy, expensive. The kind of equipment where a courier dropping it means a write-off.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span>What we did</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">
+                  Became their regular packing partner for Europe-wide distribution. Custom crating for each console, built to survive commercial freight handling.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span>The result</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">Ongoing relationship. No more courier dropping headaches.</p>
+              </div>
+            </details>
+          </div>
+          <div class="case-quote mt-8">
+            <blockquote class="font-headline text-lg italic leading-snug text-on-surface">
+              "At last, no more courier dropping headaches, no more worries, the equipment was going to get there in one piece and the client gets some free firewood in the bargain."
+            </blockquote>
+            <p class="font-label text-sm font-bold text-primary mt-3">Tim Jones</p>
+            <p class="text-outline text-xs">Studio Systems</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study 6: Pipex Shuttering -->
+  <section class="py-24 px-8 bg-surface-container-low">
+    <div class="max-w-6xl mx-auto anim-up">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-5">
+          <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Construction</span>
+          <h2 class="font-headline text-3xl md:text-5xl tracking-tighter leading-none mb-8">
+            Shuttering for <span class="grad-maroon-text italic">Pipex.</span>
+          </h2>
+          <div class="rounded-lg overflow-hidden img-zoom">
+            <img class="w-full h-auto object-cover aspect-[4/3]" alt="Precision-cut timber shuttering for industrial use" src="/images/fb-sectioned-crate.jpg" />
+          </div>
+        </div>
+        <div class="md:col-span-7">
+          <div class="case-accordion">
+            <details open>
+              <summary>
+                <span>The problem</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">
+                  Pipex manufactures advanced thermoplastic CSO chambers. They need timber shuttering constructed around them to allow for an immediate concrete pour on site. Clients up and down the country, each needing shuttering delivered on schedule.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span>What we did</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">
+                  Built shuttering to Pipex's specification on a regular ongoing basis, serving their clients across the country. Precision-cut timber, consistent quality, delivered when needed.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span>The result</span>
+                <span class="material-symbols-outlined accordion-chevron text-xl">expand_more</span>
+              </summary>
+              <div class="pb-6">
+                <p class="text-on-surface-variant text-lg leading-relaxed">Long-term ongoing contract. Still building for Pipex.</p>
+              </div>
+            </details>
+          </div>
+          <div class="case-quote mt-8">
+            <blockquote class="font-headline text-lg italic leading-snug text-on-surface">
+              "R. West & Son have provided Pipex with cost effective, high quality and flexible solutions to our company wide packaging and shuttering needs."
+            </blockquote>
+            <p class="font-label text-sm font-bold text-primary mt-3">Pipex Ltd</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CtaBanner />
+  <Footer />
+</BaseLayout>
+
+<style>
+  .case-accordion details {
+    border-bottom: 1px solid var(--color-outline-variant);
+  }
+  .case-accordion details:last-child {
+    border-bottom: none;
+  }
+  .case-accordion summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+    font-family: var(--font-headline);
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-on-surface);
+    cursor: pointer;
+    list-style: none;
+    transition: color 0.3s ease;
+  }
+  .case-accordion summary::-webkit-details-marker { display: none; }
+  .case-accordion summary::marker { display: none; }
+  .case-accordion details[open] summary {
+    color: var(--color-primary);
+  }
+  .case-accordion .accordion-chevron {
+    transition: transform 0.3s ease;
+  }
+  .case-accordion details[open] .accordion-chevron {
+    transform: rotate(180deg);
+  }
+  .case-quote {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-outline-variant);
+  }
+</style>
+
+<script is:inline>
+  document.querySelectorAll('.case-accordion').forEach(accordion => {
+    const allDetails = accordion.querySelectorAll('details');
+    allDetails.forEach(detail => {
+      detail.addEventListener('toggle', () => {
+        if (detail.open) {
+          allDetails.forEach(other => {
+            if (other !== detail) other.removeAttribute('open');
+          });
+        }
+      });
+    });
+  });
+</script>

@@ -1,0 +1,298 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.astro';
+import CtaBanner from '../../components/CtaBanner.astro';
+import Footer from '../../components/Footer.astro';
+---
+<BaseLayout title="Export Packing | R. West & Son">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="hero-gradient min-h-[60vh] flex items-center justify-center relative overflow-hidden hero-dots">
+    <div class="absolute inset-0 z-[5] pointer-events-none opacity-60 md:opacity-30" style="background: radial-gradient(ellipse 50% 70% at center, rgba(253,249,243,0.95) 0%, rgba(253,249,243,0.8) 40%, rgba(253,249,243,0) 100%);"></div>
+    <div class="relative z-10 text-center max-w-4xl mx-auto px-6 py-32">
+      <div class="inline-flex items-center gap-2 bg-primary-container/10 px-4 py-1 rounded-full mb-8">
+        <span class="text-primary font-label text-xs font-bold uppercase tracking-wider">&#9733; ISPM15 Certified</span>
+      </div>
+      <h1 class="font-headline text-5xl md:text-7xl lg:text-[5.5rem] tracking-tighter leading-[0.9] mb-8">
+        Your freight forwarder just said <span class="grad-maroon-text serif-italic">"ISPM15."</span>
+      </h1>
+      <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+        All wood packaging moving between the UK and EU needs heat treatment and certification. Without it, your goods get held at the border. We've been handling export packing since before it was complicated. We'll handle yours.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="grad-maroon-bg text-on-primary px-8 py-3.5 rounded-full font-label text-base font-bold uppercase tracking-widest hover:scale-105 transition-transform inline-block text-center">Get an Export Packing Quote</a>
+        <a href="tel:01752664345" class="border-2 border-primary-container/20 text-primary px-8 py-3.5 rounded-full font-label text-base font-bold uppercase tracking-widest hover:bg-surface-container-low transition-colors inline-block text-center">Call Jason</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What ISPM15 Actually Means -->
+  <section class="py-24 px-8 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+      <div class="anim-up">
+        <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">The Short Version</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none mb-8">
+          What ISPM15 <span class="grad-maroon-text italic">actually means.</span>
+        </h2>
+        <p class="text-on-surface-variant text-lg leading-relaxed mb-6">
+          ISPM15 is an international rule. If you're shipping anything in or on wood packaging to another country (yes, including the EU since Brexit), that wood needs to be heat-treated to 56 degrees C for at least 30 minutes. Then it gets stamped with an official mark. No stamp, no clearance.
+        </p>
+        <p class="text-on-surface-variant text-lg leading-relaxed mb-6">
+          Why? To stop wood-boring pests hitching a ride across borders. Not glamorous. But get it wrong and your goods can be held at customs, returned, or in severe cases destroyed. The Pallite Group puts it bluntly: non-compliant packaging can be "destroyed or deep-buried."
+        </p>
+        <p class="text-on-surface-variant text-lg leading-relaxed">
+          It's one of those things you don't need to understand fully. You just need someone who does.
+        </p>
+      </div>
+      <div class="space-y-4 anim-up">
+        <div class="rounded-lg overflow-hidden mb-4 img-zoom">
+          <img class="w-full h-auto object-cover aspect-[4/3]" alt="Export packing cases being loaded for international shipping" src="/images/export-loading-01.jpg" />
+        </div>
+        <div class="bg-surface p-8 rounded-lg border-l-4 border-primary-container">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="material-symbols-outlined text-primary-container text-3xl">local_fire_department</span>
+            <h3 class="font-headline text-lg">Heat-Treated In-House</h3>
+          </div>
+          <p class="text-on-surface-variant text-base leading-relaxed">Our timber is heat-treated to 56&#176;C for a minimum of 30 minutes, meeting ISPM15 requirements.</p>
+        </div>
+        <div class="bg-surface p-8 rounded-lg border-l-4 border-primary-container">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="material-symbols-outlined text-primary-container text-3xl">verified</span>
+            <h3 class="font-headline text-lg">IPPC Authentication Mark</h3>
+          </div>
+          <p class="text-on-surface-variant text-base leading-relaxed">Every crate carries the IPPC authentication mark with our producer number. Bi-annual audits by independent assessors keep that certification current.</p>
+        </div>
+        <div class="bg-surface p-8 rounded-lg border-l-4 border-primary-container">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="material-symbols-outlined text-primary-container text-3xl">gavel</span>
+            <h3 class="font-headline text-lg">Brexit-Ready Since Day One</h3>
+          </div>
+          <p class="text-on-surface-variant text-base leading-relaxed">We've been ISPM15 certified since the regulation applied to UK exports. We were ready when the rules changed in January 2021.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Needs Export Packing -->
+  <section class="py-24 px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-16 anim-up">
+        <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Is This You?</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+          Who needs <span class="grad-maroon-text italic">export packing.</span>
+        </h2>
+      </div>
+
+      <!-- Full-width export image -->
+      <div class="rounded-lg overflow-hidden mb-12 img-zoom">
+        <img class="w-full h-auto object-cover aspect-[21/9]" alt="Large export wooden crate packed and ready for shipping" src="/images/fb-massive-crates-outdoor.jpg" />
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 anim-stagger">
+        <div class="bg-surface-container-low p-8 rounded-lg border-l-4 border-primary-container anim-up">
+          <span class="material-symbols-outlined text-primary-container text-4xl mb-6">factory</span>
+          <h3 class="font-headline text-xl mb-3">Manufacturers shipping components overseas</h3>
+          <p class="text-on-surface-variant text-base leading-relaxed">
+            You've got a contract, a shipping date, and your freight forwarder just added "ISPM15-compliant packaging" to the requirements list. Grant Hooper at Princess Yachts was in the same position. He needed a local ISPM15 manufacturer and found us in Plymouth.
+          </p>
+        </div>
+        <div class="bg-surface-container-low p-8 rounded-lg border-l-4 border-primary-container anim-up">
+          <span class="material-symbols-outlined text-primary-container text-4xl mb-6">gavel</span>
+          <h3 class="font-headline text-xl mb-3">Exporters who just discovered the rules changed</h3>
+          <p class="text-on-surface-variant text-base leading-relaxed">
+            Since January 2021, all wood packaging between the UK and EU must be ISPM15 compliant. A lot of businesses found this out the hard way, with goods stuck at customs and no compliant packaging available at short notice. We can turn export crates around quickly when deadlines are tight.
+          </p>
+        </div>
+        <div class="bg-surface-container-low p-8 rounded-lg border-l-4 border-primary-container anim-up">
+          <span class="material-symbols-outlined text-primary-container text-4xl mb-6">public</span>
+          <h3 class="font-headline text-xl mb-3">Anyone shipping something valuable a long way</h3>
+          <p class="text-on-surface-variant text-base leading-relaxed">
+            Galleries shipping sculptures to New York. Companies relocating equipment to India. Families sending furniture to Australia. The further it travels, the more can go wrong. Our export packing includes moisture protection, custom foam inserts, and documentation that clears customs first time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Process -->
+  <section class="py-24 px-8 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-16 anim-up">
+        <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Step by Step</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+          The <span class="grad-maroon-text italic">process.</span>
+        </h2>
+      </div>
+
+      <div class="space-y-0 anim-stagger">
+        <!-- Step 1 -->
+        <div class="relative pl-12 pb-12 border-l-2 border-primary-container/30 last:border-0 anim-up">
+          <div class="absolute -left-[17px] top-0">
+            <span class="grad-maroon-bg text-on-primary w-8 h-8 rounded-full flex items-center justify-center font-headline text-sm font-bold">1</span>
+          </div>
+          <h3 class="font-headline text-2xl mb-3">Assessment</h3>
+          <p class="text-on-surface-variant text-lg leading-relaxed max-w-3xl">
+            We look at your item. Dimensions, weight, fragility, destination, shipping method. If we can't visit in person, a few photos and measurements get us started. Every job is different. A yacht component and a bronze sculpture don't get the same crate.
+          </p>
+        </div>
+        <!-- Step 2 -->
+        <div class="relative pl-12 pb-12 border-l-2 border-primary-container/30 anim-up">
+          <div class="absolute -left-[17px] top-0">
+            <span class="grad-maroon-bg text-on-primary w-8 h-8 rounded-full flex items-center justify-center font-headline text-sm font-bold">2</span>
+          </div>
+          <h3 class="font-headline text-2xl mb-3">Design &amp; Build</h3>
+          <p class="text-on-surface-variant text-lg leading-relaxed max-w-3xl">
+            Your crate gets designed around your item. Not the other way round. Heat-treated timber to ISPM15 spec. CNC-cut foam inserts if the item needs them, precision-fit with no gaps and no movement in transit. Foil barrier bags and desiccant for moisture protection on long-haul shipments.
+          </p>
+        </div>
+        <!-- Step 3 -->
+        <div class="relative pl-12 pb-12 border-l-2 border-primary-container/30 anim-up">
+          <div class="absolute -left-[17px] top-0">
+            <span class="grad-maroon-bg text-on-primary w-8 h-8 rounded-full flex items-center justify-center font-headline text-sm font-bold">3</span>
+          </div>
+          <h3 class="font-headline text-2xl mb-3">Packing</h3>
+          <p class="text-on-surface-variant text-lg leading-relaxed max-w-3xl">
+            We pack at our Ocean Quay workshop, or on-site at your premises if the item can't travel unpacked. Bolted, braced, and protected to survive the worst a container ship can throw at it.
+          </p>
+        </div>
+        <!-- Step 4 -->
+        <div class="relative pl-12 pb-12 border-l-2 border-primary-container/30 anim-up">
+          <div class="absolute -left-[17px] top-0">
+            <span class="grad-maroon-bg text-on-primary w-8 h-8 rounded-full flex items-center justify-center font-headline text-sm font-bold">4</span>
+          </div>
+          <h3 class="font-headline text-2xl mb-3">Documentation</h3>
+          <p class="text-on-surface-variant text-lg leading-relaxed max-w-3xl">
+            ISPM15 certification marks on every crate. Export documentation completed. Customs paperwork handled. This is the bit that trips people up. It's also the bit we've been doing for decades.
+          </p>
+        </div>
+        <!-- Step 5 -->
+        <div class="relative pl-12 pb-0 anim-up">
+          <div class="absolute -left-[17px] top-0">
+            <span class="grad-maroon-bg text-on-primary w-8 h-8 rounded-full flex items-center justify-center font-headline text-sm font-bold">5</span>
+          </div>
+          <h3 class="font-headline text-2xl mb-3">Shipping Coordination</h3>
+          <p class="text-on-surface-variant text-lg leading-relaxed max-w-3xl">
+            We arrange onward travel through our network of hauliers and shipping companies. You don't need to find a separate freight provider. One call started this. One call finishes it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="py-24 px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-16 anim-up">
+        <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Credentials</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+          Certifications and <span class="grad-maroon-text italic">memberships.</span>
+        </h2>
+      </div>
+
+      <!-- Certification images -->
+      <div class="grid grid-cols-3 gap-4 mb-12">
+        <div class="rounded-lg overflow-hidden img-zoom bg-white flex items-center justify-center p-8">
+          <img class="w-full h-auto object-contain max-h-48" alt="ISPM15 certification stamp on heat-treated timber" src="/images/ispm15-stamp.jpg" />
+        </div>
+        <div class="rounded-lg overflow-hidden img-zoom">
+          <img class="w-full h-full object-cover aspect-[3/2]" alt="Foil-wrapped export packing case" src="/images/fb-foil-wrapped.jpg" />
+        </div>
+        <div class="rounded-lg overflow-hidden img-zoom">
+          <img class="w-full h-full object-cover aspect-[3/2]" alt="ISPM15 compliant crates ready for export" src="/images/fb-ispm15-crates.jpg" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 anim-stagger">
+        <div class="flex items-start gap-5 bg-surface-container-low p-8 rounded-lg anim-up">
+          <span class="material-symbols-outlined text-primary-container text-4xl mt-1">verified</span>
+          <div>
+            <h3 class="font-headline text-xl mb-2">ISPM15 Certified</h3>
+            <p class="text-on-surface-variant text-base leading-relaxed">Heat-treated timber, IPPC authentication mark, bi-annual independent audits.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-5 bg-surface-container-low p-8 rounded-lg anim-up">
+          <span class="material-symbols-outlined text-primary-container text-4xl mt-1">shield</span>
+          <div>
+            <h3 class="font-headline text-xl mb-2">UKWPMMP Member</h3>
+            <p class="text-on-surface-variant text-base leading-relaxed">UK Wood Packaging Material Marking Programme, administered by TIMCON, regulated by the Forestry Commission.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-5 bg-surface-container-low p-8 rounded-lg anim-up">
+          <span class="material-symbols-outlined text-primary-container text-4xl mt-1">groups</span>
+          <div>
+            <h3 class="font-headline text-xl mb-2">TIMCON Member</h3>
+            <p class="text-on-surface-variant text-base leading-relaxed">The Timber Packaging and Pallet Confederation, the UK's primary industry body.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="relative py-24 px-8 overflow-hidden anim-up">
+    <img class="absolute inset-0 w-full h-full object-cover" alt="R. West & Son workshop" src="/images/fb-huge-crate-forklift.jpg" />
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="inline-block bg-white/10 backdrop-blur text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Export Customers</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none text-white">What our export clients <span class="text-primary-fixed-dim italic">say.</span></h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 shadow-2xl flex flex-col">
+          <div class="flex gap-1 mb-4">
+            <span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <blockquote class="font-headline text-lg italic leading-snug mb-6 text-white flex-1">
+            "R. West & Son in Plymouth has successfully provided us with a reliable solution to this problem."
+          </blockquote>
+          <div class="border-t border-white/20 pt-4">
+            <p class="font-label font-bold uppercase tracking-widest text-white text-xs">Grant Hooper</p>
+            <p class="text-white/60 text-xs">Head of Materials &amp; Aftersales, Princess Yachts International PLC</p>
+          </div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-8 shadow-2xl flex flex-col">
+          <div class="flex gap-1 mb-4">
+            <span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <blockquote class="font-headline text-lg italic leading-snug mb-6 text-white flex-1">
+            "R. West & Son went above and beyond. Services normally classified as an extra by other companies were included, and the factory relocation to China went exactly to plan."
+          </blockquote>
+          <div class="border-t border-white/20 pt-4">
+            <p class="font-label font-bold uppercase tracking-widest text-white text-xs">Chris Owen</p>
+            <p class="text-white/60 text-xs">European Vice President, Sagittarius Sporting Goods</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-12 px-8">
+    <div class="grad-maroon-bg rounded-lg p-12 md:p-20 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 relative overflow-hidden anim-scale">
+      <div class="relative z-10 max-w-2xl text-center md:text-left">
+        <h2 class="font-headline text-5xl md:text-7xl text-white tracking-tighter leading-none mb-6">
+          Got a shipment that needs <span class="text-primary-fixed-dim italic">sorting?</span>
+        </h2>
+        <p class="text-white/80 text-xl md:text-2xl font-headline mb-10">Tell us what you're shipping, where it's going, and when it needs to arrive. We'll come back with a quote and a plan.</p>
+        <div class="flex flex-col sm:flex-row gap-5">
+          <a href="/contact" class="bg-white text-[#69001c] px-12 py-5 rounded-full font-label text-base font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-lg inline-block text-center">Get an Export Packing Quote</a>
+          <a href="tel:01752664345" class="border-2 border-white/40 text-white px-12 py-5 rounded-full font-label text-base font-bold uppercase tracking-widest hover:bg-white/15 transition-colors inline-block text-center">Call Jason</a>
+        </div>
+      </div>
+      <div class="relative z-10 w-full md:w-1/3">
+        <img class="w-full drop-shadow-2xl translate-y-8 rounded-lg" alt="Export wooden crates by R. West & Son" src="/images/cta-crates.jpg" />
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>

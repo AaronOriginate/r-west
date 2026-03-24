@@ -1,0 +1,242 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import CtaBanner from '../components/CtaBanner.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="Reviews | R. West & Son">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="pt-40 pb-20 px-8 max-w-7xl mx-auto text-center anim-up">
+    <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Reviews</span>
+    <h1 class="font-headline text-5xl md:text-7xl tracking-tighter leading-[0.9] mb-6">
+      Don't take our word <span class="grad-maroon-text italic">for it.</span>
+    </h1>
+    <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+      These are from the people we've packed for. Names, companies, and why they keep coming back.
+    </p>
+  </section>
+
+  <!-- Featured Testimonial -->
+  <section class="py-16 px-8 max-w-7xl mx-auto anim-up">
+    <div class="relative bg-white rounded-2xl shadow-[0_8px_48px_rgba(139,113,114,0.12)] border border-outline/5 grid grid-cols-1 md:grid-cols-3 overflow-hidden">
+      <div class="md:col-span-2 p-10 md:p-16 relative">
+        <span class="material-symbols-outlined text-primary/10 text-[120px] absolute -top-4 left-6 leading-none select-none" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+        <div class="relative z-10">
+          <div class="flex gap-1 mb-6">
+            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+          </div>
+          <blockquote class="font-headline text-2xl md:text-3xl italic leading-snug tracking-tight mb-8 text-on-surface">
+            "This was one less headache to deal with. A good, all-round job and R. West &amp; Son are thoroughly recommended."
+          </blockquote>
+          <div class="border-t border-outline/10 pt-6">
+            <p class="font-label font-bold uppercase tracking-widest text-on-surface text-sm">Steve Broadstock</p>
+            <p class="text-on-surface-variant text-sm">Managing Director, British Fly Reels</p>
+            <p class="text-on-surface-variant text-xs mt-2 leading-relaxed">R. West packed and shipped British Fly Reels' manufacturing equipment during their factory relocation to China. The entire job handled end to end: collection, packing, documentation, shipping.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:block md:col-span-1">
+        <img class="w-full h-full object-cover" alt="Export packing by R. West & Son" src="/images/fb-foil-barrier.jpg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Manufacturing & Export Clients -->
+  <section class="py-16 px-8 max-w-7xl mx-auto anim-up">
+    <div class="mb-12">
+      <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">Manufacturing &amp; Export</span>
+      <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">Trusted by industry <span class="grad-maroon-text italic">leaders.</span></h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Grant Hooper -->
+      <div class="bg-white rounded-2xl p-8 shadow-[0_4px_32px_rgba(139,113,114,0.08)] flex flex-col">
+        <div class="flex gap-1 mb-4">
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+        </div>
+        <blockquote class="font-headline text-lg italic leading-snug mb-6 text-on-surface flex-1">
+          "R. West &amp; Son in Plymouth has successfully provided us with a reliable solution to this problem."
+        </blockquote>
+        <div class="border-t border-outline/10 pt-4">
+          <p class="font-label font-bold uppercase tracking-widest text-on-surface text-xs">Grant Hooper</p>
+          <p class="text-on-surface-variant text-xs">Head of Materials &amp; Aftersales, Princess Yachts International PLC</p>
+          <p class="text-on-surface-variant text-[11px] mt-2 leading-relaxed">Needed a local ISPM15-compliant packaging manufacturer for international yacht component shipments.</p>
+        </div>
+      </div>
+
+      <!-- Chris Owen -->
+      <div class="bg-white rounded-2xl p-8 shadow-[0_4px_32px_rgba(139,113,114,0.08)] flex flex-col">
+        <div class="flex gap-1 mb-4">
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+        </div>
+        <blockquote class="font-headline text-lg italic leading-snug mb-6 text-on-surface flex-1">
+          "R. West &amp; Son went above and beyond. Services normally classified as an extra by other companies were included, and the whole process was handled professionally from start to finish."
+        </blockquote>
+        <div class="border-t border-outline/10 pt-4">
+          <p class="font-label font-bold uppercase tracking-widest text-on-surface text-xs">Chris Owen</p>
+          <p class="text-on-surface-variant text-xs">European Vice President, Sagittarius Sporting Goods</p>
+          <p class="text-on-surface-variant text-[11px] mt-2 leading-relaxed">Relocated their European manufacturing facility to China. R. West handled the full export packing.</p>
+        </div>
+      </div>
+
+      <!-- Keith Preston -->
+      <div class="bg-white rounded-2xl p-8 shadow-[0_4px_32px_rgba(139,113,114,0.08)] flex flex-col">
+        <div class="flex gap-1 mb-4">
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+        </div>
+        <blockquote class="font-headline text-lg italic leading-snug mb-6 text-on-surface flex-1">
+          "We have traded with R. West &amp; Son for over 10 years. They always deliver on time, and the quality of the work is consistently excellent."
+        </blockquote>
+        <div class="border-t border-outline/10 pt-4">
+          <p class="font-label font-bold uppercase tracking-widest text-on-surface text-xs">Keith Preston</p>
+          <p class="text-on-surface-variant text-xs">Long-term Trade Client</p>
+          <p class="text-on-surface-variant text-[11px] mt-2 leading-relaxed">A decade of repeat business. The kind of relationship that doesn't happen by accident.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Image break between review sections -->
+  <section class="relative h-[35vh] overflow-hidden">
+    <img class="absolute inset-0 w-full h-full object-cover" alt="Wooden crates and packing cases at R. West & Son" src="/images/fb-large-crates-workshop.jpg" />
+    <div class="absolute inset-0 bg-black/20"></div>
+  </section>
+
+  <!-- Specialist & Trade Clients -->
+  <section class="py-16 px-8 max-w-7xl mx-auto anim-up">
+    <div class="mb-12">
+      <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">Specialist &amp; Trade</span>
+      <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">Galleries, studios, <span class="grad-maroon-text italic">factory floors.</span></h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Fowey River Gallery -->
+      <div class="bg-white rounded-2xl p-8 shadow-[0_4px_32px_rgba(139,113,114,0.08)] flex flex-col">
+        <div class="flex gap-1 mb-4">
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+        </div>
+        <blockquote class="font-headline text-lg italic leading-snug mb-6 text-on-surface flex-1">
+          "Excellent service from start to finish. The sculpture was packed beautifully and arrived in perfect condition."
+        </blockquote>
+        <div class="border-t border-outline/10 pt-4">
+          <p class="font-label font-bold uppercase tracking-widest text-on-surface text-xs">Fowey River Gallery</p>
+          <p class="text-on-surface-variant text-xs">Fine Art Gallery</p>
+          <p class="text-on-surface-variant text-[11px] mt-2 leading-relaxed">A bronze sculpture packed in a custom foam-lined case, CNC-cut to the exact profile. Not a mark on it.</p>
+        </div>
+      </div>
+
+      <!-- Studio Systems -->
+      <div class="bg-white rounded-2xl p-8 shadow-[0_4px_32px_rgba(139,113,114,0.08)] flex flex-col">
+        <div class="flex gap-1 mb-4">
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+        </div>
+        <blockquote class="font-headline text-lg italic leading-snug mb-6 text-on-surface flex-1">
+          "We use R. West for all our console shipments across Europe. They understand the equipment and they understand the deadlines."
+        </blockquote>
+        <div class="border-t border-outline/10 pt-4">
+          <p class="font-label font-bold uppercase tracking-widest text-on-surface text-xs">Studio Systems</p>
+          <p class="text-on-surface-variant text-xs">Professional Audio Equipment</p>
+          <p class="text-on-surface-variant text-[11px] mt-2 leading-relaxed">Professional mixing consoles shipped across Europe. Fragile, heavy, expensive.</p>
+        </div>
+      </div>
+
+      <!-- Datum Alloys -->
+      <div class="bg-white rounded-2xl p-8 shadow-[0_4px_32px_rgba(139,113,114,0.08)] flex flex-col">
+        <div class="flex gap-1 mb-4">
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+        </div>
+        <blockquote class="font-headline text-lg italic leading-snug mb-6 text-on-surface flex-1">
+          "The service is always reliable, and we wouldn't use anyone else for our packaging requirements."
+        </blockquote>
+        <div class="border-t border-outline/10 pt-4">
+          <p class="font-label font-bold uppercase tracking-widest text-on-surface text-xs">Geoff Lewis</p>
+          <p class="text-on-surface-variant text-xs">Warehouse Manager, Datum Alloys Ltd</p>
+          <p class="text-on-surface-variant text-[11px] mt-2 leading-relaxed">Metal and alloy shipments. Consistent, reliable, repeat business.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- The Extraordinary Jobs -->
+  <section class="relative py-24 px-8 overflow-hidden anim-up">
+    <img class="absolute inset-0 w-full h-full object-cover" alt="R. West & Son workshop" src="/images/fb-massive-crates-outdoor.jpg" />
+    <div class="absolute inset-0 bg-black/65"></div>
+    <div class="relative z-10 max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="inline-block bg-white/10 backdrop-blur text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">The Extraordinary Jobs</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none text-white">Some jobs carry more <span class="text-primary-fixed-dim italic">weight.</span></h2>
+      </div>
+      <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-10 md:p-14 shadow-2xl max-w-3xl mx-auto">
+        <div class="flex gap-1 mb-6">
+          <span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined text-primary-fixed-dim text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+        </div>
+        <blockquote class="font-headline text-2xl md:text-3xl italic leading-snug mb-8 text-white tracking-tight">
+          "The design for the Antarctic ration boxes has remained unchanged since Scott's time in the early 1900s. R. West builds them exactly to that specification."
+        </blockquote>
+        <div class="border-t border-white/20 pt-6">
+          <p class="font-label font-bold uppercase tracking-widest text-white text-sm">Andrew Lusk &amp; Co</p>
+          <p class="text-white/60 text-sm">Antarctic Expedition Supplier</p>
+          <p class="text-white/50 text-xs mt-2 leading-relaxed">Ration boxes for Antarctic expeditions. Same design since the early 1900s. Built in a Plymouth workshop.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews -->
+  <section class="py-24 px-8 max-w-4xl mx-auto text-center anim-up">
+    <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Google Reviews</span>
+    <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none mb-6">We're building our review <span class="grad-maroon-text italic">presence.</span></h2>
+    <p class="text-on-surface-variant text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+      Most of our customers find us through word of mouth, so we never built up a review presence online. If you've worked with us, we'd appreciate you leaving one.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://g.page/r/review" class="grad-maroon-bg text-on-primary px-8 py-3.5 rounded-full font-label text-base font-bold uppercase tracking-widest hover:scale-105 transition-transform inline-flex items-center gap-2 justify-center">
+        <span class="material-symbols-outlined text-lg">rate_review</span>
+        Leave a Google Review
+      </a>
+      <a href="https://www.facebook.com/rwestandson/reviews" class="border-2 border-primary-container/20 text-primary px-8 py-3.5 rounded-full font-label text-base font-bold uppercase tracking-widest hover:bg-surface-container-low transition-colors inline-flex items-center gap-2 justify-center">
+        <span class="material-symbols-outlined text-lg">thumb_up</span>
+        Leave a Facebook Review
+      </a>
+    </div>
+  </section>
+
+  <CtaBanner />
+  <Footer />
+</BaseLayout>

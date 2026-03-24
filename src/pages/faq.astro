@@ -1,0 +1,141 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import CtaBanner from '../components/CtaBanner.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="FAQ | R. West & Son">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="pt-40 pb-20 px-8 max-w-7xl mx-auto text-center anim-up">
+    <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">FAQ</span>
+    <h1 class="font-headline text-5xl md:text-7xl tracking-tighter leading-[0.9] mb-6">
+      Questions we get asked <span class="grad-maroon-text italic">a lot.</span>
+    </h1>
+    <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+      And a few you haven't thought of yet. If yours isn't here, call Jason on <a href="tel:01752664345" class="text-primary font-semibold hover:underline">01752 664345</a>. He's been answering packaging questions for 25 years.
+    </p>
+  </section>
+
+  <!-- The Big Questions -->
+  <section class="py-16 px-8 max-w-4xl mx-auto anim-up">
+    <div class="mb-10">
+      <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">The Big Questions</span>
+      <p class="text-on-surface-variant text-base leading-relaxed">The questions that actually stop people from picking up the phone.</p>
+    </div>
+    <div class="space-y-4">
+
+      <details class="group bg-surface-container-low p-6 rounded-md">
+        <summary class="flex justify-between items-center cursor-pointer list-none">
+          <span class="font-headline text-xl">How much does custom packaging cost?</span>
+          <span class="material-symbols-outlined group-open:rotate-45 transition-transform">add</span>
+        </summary>
+        <p class="pt-4 text-on-surface-variant leading-relaxed">It depends. A simple pallet might be a few hundred pounds. A custom foam-lined export case for a large bronze sculpture will cost more. Every item is different. Dimensions, weight, fragility, destination, and shipping method all affect the price. We don't publish a price list because there isn't one that would be accurate.</p>
+        <p class="pt-3 text-on-surface-variant leading-relaxed">What we can tell you: we'll give you a clear quote before any work starts. No surprises. Send us a photo of your item and tell us where it's going, and we'll come back with a number. Usually within a day or two.</p>
+      </details>
+
+      <details class="group bg-surface-container-low p-6 rounded-md">
+        <summary class="flex justify-between items-center cursor-pointer list-none">
+          <span class="font-headline text-xl">Can you handle just one item? I don't have a bulk order.</span>
+          <span class="material-symbols-outlined group-open:rotate-45 transition-transform">add</span>
+        </summary>
+        <p class="pt-4 text-on-surface-variant leading-relaxed">Yes. Happily. This is one of the things that sets us apart. A lot of packaging companies want volume. We're genuinely happy to build one crate for one sculpture, pack one piano for overseas shipping, or make a single custom case for a prototype. Every job matters to us. Chris Owen at Sagittarius specifically mentioned that we include services "normally classified as an extra by other companies." We don't nickel-and-dime on small jobs.</p>
+      </details>
+
+      <details class="group bg-surface-container-low p-6 rounded-md">
+        <summary class="flex justify-between items-center cursor-pointer list-none">
+          <span class="font-headline text-xl">How long does it take?</span>
+          <span class="material-symbols-outlined group-open:rotate-45 transition-transform">add</span>
+        </summary>
+        <p class="pt-4 text-on-surface-variant leading-relaxed">It depends on what you need, but most jobs are turned around within days, not weeks. If you've got a shipping deadline bearing down on you, tell us. We've handled urgent jobs at short notice before. A freight forwarder calling on Monday needing export crates by Thursday is not unusual for us.</p>
+        <p class="pt-3 text-on-surface-variant leading-relaxed">For larger projects (factory relocations, batch production runs), we'll agree a timeline upfront and stick to it.</p>
+      </details>
+
+      <details class="group bg-surface-container-low p-6 rounded-md">
+        <summary class="flex justify-between items-center cursor-pointer list-none">
+          <span class="font-headline text-xl">What's the difference between a packing case and a packing crate?</span>
+          <span class="material-symbols-outlined group-open:rotate-45 transition-transform">add</span>
+        </summary>
+        <p class="pt-4 text-on-surface-variant leading-relaxed">A packing case is a fully enclosed box with plywood panels on all six sides. Better for fragile items, items that need moisture protection, or anything travelling a long distance. A crate is an open-slatted frame, lighter and cheaper, good for heavy items that need airflow or aren't fragile.</p>
+        <p class="pt-3 text-on-surface-variant leading-relaxed">We'll recommend the right one for your item. Most people don't need to know the difference. They just need to know it'll arrive safely.</p>
+      </details>
+
+      <details class="group bg-surface-container-low p-6 rounded-md">
+        <summary class="flex justify-between items-center cursor-pointer list-none">
+          <span class="font-headline text-xl">Do I need ISPM15 packaging?</span>
+          <span class="material-symbols-outlined group-open:rotate-45 transition-transform">add</span>
+        </summary>
+        <p class="pt-4 text-on-surface-variant leading-relaxed">If you're shipping anything in or on wood packaging to another country, including the EU since Brexit, yes. ISPM15 requires the wood to be heat-treated and stamped with a certification mark. Without it, your goods can be held at customs or returned.</p>
+        <p class="pt-3 text-on-surface-variant leading-relaxed">We're fully certified. Our timber is heat-treated in-house, every crate carries the IPPC mark, and we handle the export documentation. If your freight forwarder has just told you about this, that's exactly the situation we deal with regularly. <a href="/services/export-packing" class="text-primary font-semibold hover:underline">Read more about export packing</a>.</p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- Practical Questions -->
+  <section class="py-16 px-8 max-w-4xl mx-auto anim-up">
+    <div class="mb-10">
+      <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4">Practical Questions</span>
+      <p class="text-on-surface-variant text-base leading-relaxed">The "how does it work" details that make calling feel easier.</p>
+    </div>
+    <div class="space-y-4">
+
+      <details class="group bg-surface-container-low p-6 rounded-md">
+        <summary class="flex justify-between items-center cursor-pointer list-none">
+          <span class="font-headline text-xl">What areas do you cover?</span>
+          <span class="material-symbols-outlined group-open:rotate-45 transition-transform">add</span>
+        </summary>
+        <p class="pt-4 text-on-surface-variant leading-relaxed">We're based in Plymouth, at Ocean Quay. We collect items across the South West in our own vehicles, and we arrange collection and delivery nationwide. We've shipped goods to every continent. Not local? That's fine. Distance isn't a barrier, it's just logistics.</p>
+      </details>
+
+      <details class="group bg-surface-container-low p-6 rounded-md">
+        <summary class="flex justify-between items-center cursor-pointer list-none">
+          <span class="font-headline text-xl">Can you come to me? My item can't be moved unpacked.</span>
+          <span class="material-symbols-outlined group-open:rotate-45 transition-transform">add</span>
+        </summary>
+        <p class="pt-4 text-on-surface-variant leading-relaxed">Absolutely. We offer on-site packing. We'll bring the materials and build the crate or case around your item at your premises. Useful for heavy machinery, installed artwork, or anything too large or fragile to transport before it's packed.</p>
+      </details>
+
+      <details class="group bg-surface-container-low p-6 rounded-md">
+        <summary class="flex justify-between items-center cursor-pointer list-none">
+          <span class="font-headline text-xl">Do you arrange shipping as well, or just the packing?</span>
+          <span class="material-symbols-outlined group-open:rotate-45 transition-transform">add</span>
+        </summary>
+        <p class="pt-4 text-on-surface-variant leading-relaxed">Both. We coordinate onward travel through our network of hauliers and shipping companies. You don't need to find a separate freight provider. Collection, storage, packing, documentation, shipping. It's all one company.</p>
+      </details>
+
+      <details class="group bg-surface-container-low p-6 rounded-md">
+        <summary class="flex justify-between items-center cursor-pointer list-none">
+          <span class="font-headline text-xl">What happens to the packaging when it arrives?</span>
+          <span class="material-symbols-outlined group-open:rotate-45 transition-transform">add</span>
+        </summary>
+        <p class="pt-4 text-on-surface-variant leading-relaxed">Wooden packaging is recyclable and biodegradable. The timber we use is sustainably sourced. Most customers dispose of the crate through local recycling, or keep it if they need to ship the item again. Export cases built to ISPM15 spec can be reused for further international shipments.</p>
+      </details>
+
+      <details class="group bg-surface-container-low p-6 rounded-md">
+        <summary class="flex justify-between items-center cursor-pointer list-none">
+          <span class="font-headline text-xl">Can you store my goods before shipping?</span>
+          <span class="material-symbols-outlined group-open:rotate-45 transition-transform">add</span>
+        </summary>
+        <p class="pt-4 text-on-surface-variant leading-relaxed">Yes. We have secure storage at our Ocean Quay workshop. If your item is ready but the shipping date hasn't been confirmed, we'll keep it safe until it's time to go. Useful when you're coordinating a move or waiting on logistics at the other end.</p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- Still Not Sure -->
+  <section class="py-24 px-8 max-w-4xl mx-auto text-center anim-up">
+    <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none mb-6">Still not <span class="grad-maroon-text italic">sure?</span></h2>
+    <p class="text-on-surface-variant text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+      The best way to get an answer is to ask. Call Jason on <a href="tel:01752664345" class="text-primary font-semibold hover:underline">01752 664345</a>. Or send us a message with what you've got and where it's going. We don't do hard sells. We answer questions and give quotes. That's it.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/contact" class="grad-maroon-bg text-on-primary px-8 py-3.5 rounded-full font-label text-base font-bold uppercase tracking-widest hover:scale-105 transition-transform inline-block text-center">Get in Touch</a>
+      <a href="tel:01752664345" class="border-2 border-primary-container/20 text-primary px-8 py-3.5 rounded-full font-label text-base font-bold uppercase tracking-widest hover:bg-surface-container-low transition-colors inline-block text-center">Call Us</a>
+    </div>
+  </section>
+
+  <CtaBanner />
+  <Footer />
+</BaseLayout>

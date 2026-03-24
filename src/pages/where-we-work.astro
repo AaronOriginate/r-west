@@ -1,0 +1,233 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import CtaBanner from '../components/CtaBanner.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="Where We Work | R. West & Son">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="bg-surface-container-low py-32 px-8">
+    <div class="max-w-7xl mx-auto text-center">
+      <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-8 anim-up">Our Location</span>
+      <h1 class="font-headline text-5xl md:text-7xl tracking-tighter leading-[0.9] mb-8 anim-up">
+        Based in Plymouth. <span class="grad-maroon-text italic">We come to you.</span>
+      </h1>
+      <p class="text-on-surface-variant text-lg md:text-xl max-w-3xl mx-auto leading-relaxed anim-up">
+        Our workshop is at Ocean Quay, Plymouth. We collect items across the South West in our own vehicles and arrange delivery nationwide and internationally. Not local? That's fine. It's just logistics.
+      </p>
+    </div>
+  </section>
+
+  <!-- Full-width Plymouth image -->
+  <section class="relative h-[50vh] overflow-hidden">
+    <img class="absolute inset-0 w-full h-full object-cover" alt="Plymouth harbour waterfront" src="/images/plymouth-harbour-01.jpg" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+    <div class="absolute bottom-8 left-8 z-10">
+      <p class="font-headline text-white text-lg">Plymouth Waterfront</p>
+      <p class="text-white/60 text-sm">Home since 1910</p>
+    </div>
+  </section>
+
+  <!-- Plymouth: Our Home -->
+  <section class="py-24 px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div class="space-y-8 anim-up">
+        <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Plymouth: Our Home</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+          Why Plymouth <span class="grad-maroon-text italic">matters</span>
+        </h2>
+        <p class="text-on-surface-variant text-lg leading-relaxed">
+          We've been here since 1910. Plymouth is the largest manufacturing base in the South of England, with 13% of the city's workforce in manufacturing.
+        </p>
+        <p class="text-on-surface-variant text-lg leading-relaxed">
+          Princess Yachts builds here. Babcock runs the Royal Dockyard. The Plymouth Manufacturers' Group turns over GBP 1.6 billion a year.
+        </p>
+        <p class="text-on-surface-variant text-lg leading-relaxed">
+          Our workshop at Ocean Quay sits in the middle of it. We pack and ship for the companies that make things in this city. And when your goods need to go further, we handle that too.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-6 anim-up">
+        <div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_20px_40px_rgba(139,113,114,0.08)] flex flex-col items-center text-center">
+          <span class="text-5xl font-headline grad-maroon-text mb-2">13%</span>
+          <span class="font-label font-bold uppercase tracking-widest text-xs mb-2">Workforce</span>
+          <p class="text-on-surface-variant text-sm">In manufacturing</p>
+        </div>
+        <div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_20px_40px_rgba(139,113,114,0.08)] flex flex-col items-center text-center">
+          <span class="text-5xl font-headline grad-maroon-text mb-2">£1.6B</span>
+          <span class="font-label font-bold uppercase tracking-widest text-xs mb-2">Turnover</span>
+          <p class="text-on-surface-variant text-sm">Plymouth manufacturers</p>
+        </div>
+        <div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_20px_40px_rgba(139,113,114,0.08)] flex flex-col items-center text-center">
+          <span class="text-5xl font-headline grad-maroon-text mb-2">1910</span>
+          <span class="font-label font-bold uppercase tracking-widest text-xs mb-2">Established</span>
+          <p class="text-on-surface-variant text-sm">Four generations</p>
+        </div>
+        <div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_20px_40px_rgba(139,113,114,0.08)] flex flex-col items-center text-center">
+          <span class="text-5xl font-headline grad-maroon-text mb-2">5x</span>
+          <span class="font-label font-bold uppercase tracking-widest text-xs mb-2">Bigger</span>
+          <p class="text-on-surface-variant text-sm">Ocean Quay workshop</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Reach: 3 tiers -->
+  <section class="py-24 px-8 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-16 text-center">
+        <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Our Reach</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+          Wherever you are, <span class="grad-maroon-text italic">we'll get there.</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 anim-stagger">
+        <!-- South West -->
+        <div class="bg-white p-10 rounded-lg shadow-[0_20px_40px_rgba(139,113,114,0.08)] hover:shadow-[0_25px_50px_rgba(139,113,114,0.14)] transition-all duration-300 hover:-translate-y-1 anim-up">
+          <span class="material-symbols-outlined text-primary text-4xl mb-6">local_shipping</span>
+          <h3 class="font-headline text-2xl mb-2">South West</h3>
+          <span class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant block mb-4">Collection in our own vehicle</span>
+          <p class="text-on-surface-variant text-base leading-relaxed mb-6">
+            We cover Plymouth, Exeter, Torbay, Taunton, Bristol, Truro, and Barnstaple. We drive to you, collect your item, and bring it back to the workshop. Our own vehicle. Our own team. Door to door.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            {["Plymouth", "Exeter", "Torbay", "Taunton", "Bristol", "Truro", "Barnstaple"].map((place) => (
+              <span class="bg-surface-container-low text-on-surface-variant px-3 py-1 rounded-full text-xs font-label">{place}</span>
+            ))}
+          </div>
+        </div>
+        <!-- Nationwide -->
+        <div class="bg-white p-10 rounded-lg shadow-[0_20px_40px_rgba(139,113,114,0.08)] hover:shadow-[0_25px_50px_rgba(139,113,114,0.14)] transition-all duration-300 hover:-translate-y-1 anim-up">
+          <span class="material-symbols-outlined text-primary text-4xl mb-6">map</span>
+          <h3 class="font-headline text-2xl mb-2">Nationwide</h3>
+          <span class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant block mb-4">Arranged collection &amp; delivery</span>
+          <p class="text-on-surface-variant text-base leading-relaxed mb-6">
+            Further afield? We arrange collection through our network. London, Birmingham, Manchester, Edinburgh. Wherever the item is, we'll get it to us. Or get us to it with an on-site packing crew.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            {["London", "Birmingham", "Manchester", "Edinburgh"].map((place) => (
+              <span class="bg-surface-container-low text-on-surface-variant px-3 py-1 rounded-full text-xs font-label">{place}</span>
+            ))}
+          </div>
+        </div>
+        <!-- International -->
+        <div class="relative bg-gradient-to-br from-primary-container to-primary p-10 rounded-lg shadow-2xl overflow-hidden anim-up">
+          <span class="material-symbols-outlined text-on-primary/80 text-4xl mb-6">flight_takeoff</span>
+          <h3 class="font-headline text-2xl text-on-primary mb-2">International</h3>
+          <span class="font-label text-xs font-bold uppercase tracking-widest text-on-primary/70 block mb-4">Shipping worldwide</span>
+          <p class="text-on-primary/80 text-base leading-relaxed mb-6">
+            We've shipped to every continent. Export packing with ISPM15 certification, customs documentation, and coordinated shipping through our haulier and freight network.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            {["New York", "Dubai", "Shanghai", "Sydney", "Antarctica"].map((place) => (
+              <span class="bg-white/10 text-on-primary/90 px-3 py-1 rounded-full text-xs font-label">{place}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workshop image break -->
+  <section class="relative h-[40vh] overflow-hidden">
+    <img class="absolute inset-0 w-full h-full object-cover" alt="R. West & Son workshop at Ocean Quay" src="/images/fb-large-cases-factory.jpg" />
+    <div class="absolute inset-0 bg-black/20"></div>
+  </section>
+
+  <!-- Freeport Section -->
+  <section class="py-24 px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="bg-[#4A0D19] rounded-lg p-12 md:p-20 relative overflow-hidden">
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div class="space-y-8">
+            <span class="inline-block bg-surface/20 text-surface px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Plymouth &amp; South Devon Freeport</span>
+            <h2 class="font-headline text-4xl md:text-5xl tracking-tighter leading-none text-on-primary">
+              A city that's <span class="text-primary-fixed-dim italic">building</span>
+            </h2>
+            <p class="text-on-primary/80 text-lg leading-relaxed">
+              Plymouth is home to the UK's first fully operational Freeport. Over 1,000 new jobs in the first two years, with up to 9,000 projected over the next decade. GBP 100 million in investment already committed.
+            </p>
+            <p class="text-on-primary/80 text-lg leading-relaxed">
+              The GBP 4.4 billion MOD investment in Devonport Dockyard will sustain work through to at least 2070. We moved to our Ocean Quay premises in 2022, five times the size of our previous workshop on Sutton Road. The city is growing. So are we.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="bg-white/10 p-8 rounded-lg backdrop-blur text-center">
+              <span class="text-4xl font-headline text-on-primary block mb-1">1,000+</span>
+              <span class="font-label text-xs font-bold uppercase tracking-widest text-on-primary/70">New jobs</span>
+            </div>
+            <div class="bg-white/10 p-8 rounded-lg backdrop-blur text-center">
+              <span class="text-4xl font-headline text-on-primary block mb-1">9,000</span>
+              <span class="font-label text-xs font-bold uppercase tracking-widest text-on-primary/70">Projected</span>
+            </div>
+            <div class="bg-white/10 p-8 rounded-lg backdrop-blur text-center">
+              <span class="text-4xl font-headline text-on-primary block mb-1">£100M</span>
+              <span class="font-label text-xs font-bold uppercase tracking-widest text-on-primary/70">Invested</span>
+            </div>
+            <div class="bg-white/10 p-8 rounded-lg backdrop-blur text-center">
+              <span class="text-4xl font-headline text-on-primary block mb-1">£4.4B</span>
+              <span class="font-label text-xs font-bold uppercase tracking-widest text-on-primary/70">MOD Dockyard</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map / Location -->
+  <section class="py-24 px-8 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Find Us</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+          Come and <span class="grad-maroon-text italic">see.</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+        <!-- Address card -->
+        <div class="bg-white p-10 rounded-lg shadow-[0_20px_40px_rgba(139,113,114,0.08)] space-y-6 anim-up">
+          <span class="material-symbols-outlined text-primary text-4xl">location_on</span>
+          <div>
+            <h3 class="font-headline text-2xl mb-2">R. West &amp; Son</h3>
+            <p class="font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-4">Packaging Solutions</p>
+            <p class="text-on-surface-variant text-base leading-relaxed">
+              2 Ocean Quay, Richmond Walk<br />
+              Plymouth, Devon PL1 4LL
+            </p>
+          </div>
+          <div class="space-y-3 pt-2">
+            <a href="tel:01752664345" class="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-xl">call</span>
+              <span class="font-label text-sm">01752 664345</span>
+            </a>
+            <a href="mailto:info@rwestpackagingsolutions.co.uk" class="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-xl">mail</span>
+              <span class="font-label text-sm">info@rwestpackagingsolutions.co.uk</span>
+            </a>
+          </div>
+          <a href="/contact" class="grad-maroon-bg text-on-primary px-8 py-3.5 rounded-full font-label text-base font-bold uppercase tracking-widest hover:scale-105 transition-transform inline-block text-center mt-4">Get a Quote</a>
+        </div>
+        <!-- Map placeholder -->
+        <div class="md:col-span-2 rounded-lg overflow-hidden shadow-[0_20px_40px_rgba(139,113,114,0.08)] anim-up">
+          <div class="relative bg-surface-container-low w-full" style="min-height: 450px;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2544.5!2d-4.1474!3d50.3718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486c93573d77e5c1%3A0x4e654e1e8e9c4f0!2sOcean%20Quay%2C%20Plymouth!5e0!3m2!1sen!2suk!4v1"
+              width="100%"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="R. West & Son location at Ocean Quay, Plymouth"
+              class="w-full h-full absolute inset-0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CtaBanner />
+  <Footer />
+</BaseLayout>

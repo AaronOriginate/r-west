@@ -1,0 +1,168 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="Contact Us | R. West & Son">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="pt-40 pb-20 px-8 max-w-7xl mx-auto text-center anim-up">
+    <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Get in Touch</span>
+    <h1 class="font-headline text-5xl md:text-7xl tracking-tighter leading-[0.9] mb-6">
+      Tell us what you need <span class="grad-maroon-text italic">to ship.</span>
+    </h1>
+    <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+      No forms with 14 fields. No chatbot. Just tell us what you've got and where it needs to go, and we'll come back to you with a plan and a price.
+    </p>
+  </section>
+
+  <!-- Contact Methods -->
+  <section class="py-16 px-8 max-w-7xl mx-auto anim-up">
+    <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none text-center mb-6">The quickest <span class="grad-maroon-text italic">way.</span></h2>
+    <p class="text-on-surface-variant text-lg leading-relaxed text-center max-w-3xl mx-auto mb-16">
+      That's the owner. He answers the phone. If you've got something urgent, a phone call is the fastest way to get things moving. A shipment that needs to go this week, a freight forwarder who just told you about ISPM15, a deadline that's closer than you'd like. Call first.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <!-- Phone Card -->
+      <a href="tel:01752664345" class="bg-white rounded-2xl p-10 shadow-[0_4px_32px_rgba(139,113,114,0.08)] hover:shadow-[0_8px_48px_rgba(139,113,114,0.14)] transition-shadow group flex flex-col items-center text-center">
+        <div class="w-16 h-16 grad-maroon-bg rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-white text-2xl">call</span>
+        </div>
+        <h3 class="font-headline text-2xl tracking-tight mb-2">Call Jason</h3>
+        <p class="text-primary font-headline text-xl font-semibold mb-2">01752 664345</p>
+        <p class="text-on-surface-variant text-sm leading-relaxed">The fastest way to get things moving. He's been answering packaging questions for over 25 years.</p>
+      </a>
+      <!-- Email Card -->
+      <a href="mailto:info@rwestpackagingsolutions.co.uk" class="bg-white rounded-2xl p-10 shadow-[0_4px_32px_rgba(139,113,114,0.08)] hover:shadow-[0_8px_48px_rgba(139,113,114,0.14)] transition-shadow group flex flex-col items-center text-center">
+        <div class="w-16 h-16 grad-maroon-bg rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-white text-2xl">mail</span>
+        </div>
+        <h3 class="font-headline text-2xl tracking-tight mb-2">Email Us</h3>
+        <p class="text-primary font-headline text-lg font-semibold mb-2 break-all">info@rwestpackagingsolutions.co.uk</p>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Tell us what you're shipping, roughly how big it is, and where it's going. A photo helps too.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Quote Form -->
+  <section class="py-24 px-8 bg-surface-container-low anim-up">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Quick Quote</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none mb-4">Send us the <span class="grad-maroon-text italic">details.</span></h2>
+        <p class="text-on-surface-variant text-lg leading-relaxed">Five questions. That's it. We'll call you back.</p>
+      </div>
+      <form class="bg-white rounded-2xl p-8 md:p-12 shadow-[0_4px_32px_rgba(139,113,114,0.08)] space-y-6">
+        <!-- Field 1: What are you shipping? -->
+        <div>
+          <label for="item" class="block font-label text-xs uppercase tracking-widest font-bold mb-2 text-on-surface">What are you shipping?</label>
+          <input type="text" id="item" name="item" placeholder="A sculpture, a server rack, a pallet of components&hellip;" class="w-full border border-outline/20 rounded-lg px-5 py-3.5 text-on-surface bg-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition font-body text-base" />
+        </div>
+        <!-- Field 2: Size & Weight -->
+        <div>
+          <label for="size" class="block font-label text-xs uppercase tracking-widest font-bold mb-2 text-on-surface">Roughly how big and how heavy?</label>
+          <input type="text" id="size" name="size" placeholder="e.g. 2m x 1m x 1m, about 200kg" class="w-full border border-outline/20 rounded-lg px-5 py-3.5 text-on-surface bg-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition font-body text-base" />
+        </div>
+        <!-- Field 3: Destination -->
+        <div>
+          <label for="destination" class="block font-label text-xs uppercase tracking-widest font-bold mb-2 text-on-surface">Where's it going?</label>
+          <input type="text" id="destination" name="destination" placeholder="City, country, or 'not sure yet'" class="w-full border border-outline/20 rounded-lg px-5 py-3.5 text-on-surface bg-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition font-body text-base" />
+        </div>
+        <!-- Field 4: Deadline -->
+        <div>
+          <label for="deadline" class="block font-label text-xs uppercase tracking-widest font-bold mb-2 text-on-surface">Any deadline?</label>
+          <input type="text" id="deadline" name="deadline" placeholder="e.g. needs to ship by end of month" class="w-full border border-outline/20 rounded-lg px-5 py-3.5 text-on-surface bg-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition font-body text-base" />
+        </div>
+        <!-- Field 5: Name & Number -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block font-label text-xs uppercase tracking-widest font-bold mb-2 text-on-surface">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Full name" class="w-full border border-outline/20 rounded-lg px-5 py-3.5 text-on-surface bg-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition font-body text-base" />
+          </div>
+          <div>
+            <label for="phone" class="block font-label text-xs uppercase tracking-widest font-bold mb-2 text-on-surface">Your number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone number" class="w-full border border-outline/20 rounded-lg px-5 py-3.5 text-on-surface bg-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition font-body text-base" />
+          </div>
+        </div>
+        <!-- Submit -->
+        <div class="pt-4">
+          <button type="submit" class="w-full grad-maroon-bg text-on-primary px-8 py-4 rounded-full font-label text-base font-bold uppercase tracking-widest hover:scale-[1.02] transition-transform">Send Your Details</button>
+          <p class="text-center text-on-surface-variant text-sm mt-4">We aim to respond within 4 working hours.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Full-width workshop image -->
+  <section class="relative h-[40vh] overflow-hidden">
+    <img class="absolute inset-0 w-full h-full object-cover" alt="R. West & Son workshop interior at Ocean Quay, Plymouth" src="/images/fb-crates-stacked-workshop.jpg" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+    <div class="absolute bottom-8 left-8 z-10">
+      <p class="font-headline text-white text-lg">Ocean Quay Workshop</p>
+      <p class="text-white/60 text-sm">Plymouth, Devon</p>
+    </div>
+  </section>
+
+  <!-- Where We Are + Map -->
+  <section class="py-24 px-8 max-w-7xl mx-auto anim-up">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <div>
+        <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Location</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none mb-8">Where we <span class="grad-maroon-text italic">are.</span></h2>
+        <div class="space-y-6">
+          <div class="flex gap-4 items-start">
+            <span class="material-symbols-outlined text-primary text-2xl mt-0.5">location_on</span>
+            <div>
+              <p class="font-headline text-lg font-semibold">R. West & Son Packaging Solutions</p>
+              <p class="text-on-surface-variant leading-relaxed">2 Ocean Quay, Richmond Walk<br />Plymouth, Devon PL1 4LL</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="material-symbols-outlined text-primary text-2xl mt-0.5">schedule</span>
+            <div>
+              <p class="font-headline text-lg font-semibold">Opening Hours</p>
+              <p class="text-on-surface-variant leading-relaxed">Monday to Friday, 8:00am &ndash; 5:00pm<br />Closed weekends and bank holidays</p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="material-symbols-outlined text-primary text-2xl mt-0.5">directions_car</span>
+            <div>
+              <p class="font-headline text-lg font-semibold">Collection Area</p>
+              <p class="text-on-surface-variant leading-relaxed">Based on Plymouth's waterfront, near Devonport Royal Dockyard and Princess Yachts. We collect from across the South West and arrange shipping nationwide and internationally.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-2xl overflow-hidden shadow-[0_4px_32px_rgba(139,113,114,0.08)] aspect-square lg:aspect-[4/3]">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.5!2d-4.1645!3d50.3714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486c93518e5ef4e5%3A0x7fa1e9b6e09cbed3!2sOcean+Quay%2C+Richmond+Walk%2C+Plymouth+PL1+4LL!5e0!3m2!1sen!2suk!4v1"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="R. West & Son location on Google Maps"
+          class="w-full h-full"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Not Sure Section -->
+  <section class="py-24 px-8 bg-surface-container-low anim-up">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none mb-6">Not sure what <span class="grad-maroon-text italic">you need?</span></h2>
+      <p class="text-on-surface-variant text-lg leading-relaxed mb-4">
+        That's fine. Most of our customers aren't sure when they first call. They know they've got something that matters and it needs to get somewhere safely. The details of ISPM15 compliance, moisture protection, and crate selection are our job, not yours.
+      </p>
+      <p class="text-on-surface-variant text-lg leading-relaxed mb-10">
+        That's our job to figure out. Yours is just to pick up the phone.
+      </p>
+      <a href="tel:01752664345" class="grad-maroon-bg text-on-primary px-8 py-3.5 rounded-full font-label text-base font-bold uppercase tracking-widest hover:scale-105 transition-transform inline-block">Call Jason, 01752 664345</a>
+    </div>
+  </section>
+
+  <Footer />
+</BaseLayout>

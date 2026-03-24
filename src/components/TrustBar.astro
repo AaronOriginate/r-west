@@ -1,0 +1,45 @@
+<!-- Trust Logo Bar — infinite scroll -->
+<section class="grad-maroon-animated py-10 overflow-hidden">
+  <p class="font-label text-xs uppercase tracking-[0.2em] text-white/60 mb-8 text-center">Trusted by industry leaders</p>
+  <div class="trust-scroll-wrap relative">
+    <!-- Feathered edges -->
+    <div class="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style="background: linear-gradient(to right, #69001c, transparent);"></div>
+    <div class="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style="background: linear-gradient(to left, #69001c, transparent);"></div>
+    <!-- Scrolling track (duplicated for seamless loop) -->
+    <div class="trust-scroll-track flex items-center gap-16 w-max">
+      <!-- Set 1 -->
+      <img src="/images/ispm15-certification.jpg" alt="ISPM15 Certified" class="h-10 w-auto brightness-0 invert opacity-70 flex-shrink-0" />
+      <img src="/images/logo-timcon.gif" alt="TIMCON Member" class="h-10 w-auto brightness-0 invert opacity-70 flex-shrink-0" />
+      <img src="/images/logo-princess-yachts.png" alt="Princess Yachts" class="h-8 w-auto brightness-0 invert opacity-70 flex-shrink-0" />
+      <img src="/images/logo-datum-alloys.jpg" alt="Datum Alloys" class="h-8 w-auto brightness-0 invert opacity-70 flex-shrink-0" />
+      <span class="font-headline text-xl text-white/70 tracking-tight whitespace-nowrap flex-shrink-0">British Fly Reels</span>
+      <span class="font-headline text-xl text-white/70 tracking-tight whitespace-nowrap flex-shrink-0">Sagittarius Sporting Goods</span>
+      <span class="font-headline text-xl text-white/70 tracking-tight whitespace-nowrap flex-shrink-0">Fowey River Gallery</span>
+      <span class="font-headline text-xl text-white/70 tracking-tight whitespace-nowrap flex-shrink-0">Andrew Lusk &amp; Co</span>
+      <span class="font-headline text-xl text-white/70 tracking-tight whitespace-nowrap flex-shrink-0">Studio Systems</span>
+      <!-- Set 2 (duplicate for seamless loop) -->
+      <img src="/images/ispm15-certification.jpg" alt="ISPM15 Certified" class="h-10 w-auto brightness-0 invert opacity-70 flex-shrink-0" />
+      <img src="/images/logo-timcon.gif" alt="TIMCON Member" class="h-10 w-auto brightness-0 invert opacity-70 flex-shrink-0" />
+      <img src="/images/logo-princess-yachts.png" alt="Princess Yachts" class="h-8 w-auto brightness-0 invert opacity-70 flex-shrink-0" />
+      <img src="/images/logo-datum-alloys.jpg" alt="Datum Alloys" class="h-8 w-auto brightness-0 invert opacity-70 flex-shrink-0" />
+      <span class="font-headline text-xl text-white/70 tracking-tight whitespace-nowrap flex-shrink-0">British Fly Reels</span>
+      <span class="font-headline text-xl text-white/70 tracking-tight whitespace-nowrap flex-shrink-0">Sagittarius Sporting Goods</span>
+      <span class="font-headline text-xl text-white/70 tracking-tight whitespace-nowrap flex-shrink-0">Fowey River Gallery</span>
+      <span class="font-headline text-xl text-white/70 tracking-tight whitespace-nowrap flex-shrink-0">Andrew Lusk &amp; Co</span>
+      <span class="font-headline text-xl text-white/70 tracking-tight whitespace-nowrap flex-shrink-0">Studio Systems</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .trust-scroll-track {
+    animation: trust-scroll 30s linear infinite;
+  }
+  @keyframes trust-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .trust-scroll-track:hover {
+    animation-play-state: paused;
+  }
+</style>

@@ -1,0 +1,249 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import CtaBanner from '../components/CtaBanner.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="Our Story | R. West & Son">
+  <Nav />
+
+  <!-- Hero -->
+  <section class="pt-40 pb-24 px-8 hero-gradient relative hero-dots">
+    <div class="relative z-10 max-w-4xl mx-auto text-center">
+      <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-8">Est. 1910</span>
+      <h1 class="font-headline text-5xl md:text-7xl lg:text-[5.5rem] tracking-tighter leading-[0.9] mb-8">
+        The <span class="grad-maroon-text serif-italic">Short Version</span>
+      </h1>
+      <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-6">
+        A packing case business. Plymouth. 1910 to now.
+      </p>
+      <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-6">
+        Four generations of one family built it. A fifth generation, not family by blood but family by 25 years of trust, chose to carry it forward. That's the short version.
+      </p>
+      <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+        The long version has a war gratuity, a bomb crater, a man who gave 55 years of his life to one workshop, and a customer who loved the business so much he bought it.
+      </p>
+    </div>
+  </section>
+
+  <!-- Richard West, 1910 -->
+  <section class="py-24 px-8 bg-surface">
+    <div class="max-w-5xl mx-auto anim-up">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+        <div class="md:col-span-4 flex flex-col">
+          <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 self-start">1910</span>
+          <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+            Richard West, <span class="grad-maroon-text italic">1910</span>
+          </h2>
+          <div class="hidden md:flex flex-col items-center flex-1 mt-8">
+            <div class="w-px bg-primary-container/40 flex-1 min-h-[60px]"></div>
+          </div>
+        </div>
+        <div class="md:col-span-8 space-y-6">
+          <div class="rounded-lg overflow-hidden mb-4 img-zoom">
+            <img class="w-full h-auto object-cover aspect-[3/2]" alt="Richard West, founder of R. West & Son, circa 1910" src="/images/history-richard-west.jpg" />
+          </div>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            It starts with a man born in 1867. Richard West. Plymouth.
+          </p>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            He founded R. West & Son in 1910, a packing case manufacturer serving the dockyards. Plymouth was a naval city then, and the work was steady: wooden cases for ship components, munitions stores, dockyard supplies. Richard knew timber. He knew the water. And he knew that if you built something properly the first time, you didn't build it twice.
+          </p>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            His sons Rupert and Albert went to war. They came back. And in 1919, they used a &pound;90 I.O.U. against Rupert's forthcoming war gratuity to purchase the business from their father.
+          </p>
+          <p class="text-on-surface-variant text-lg leading-relaxed font-headline italic text-on-surface">
+            Ninety pounds. That's what a packing case company cost in 1919. Adjusted for inflation, roughly &pound;5,400 today. Still a bargain.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The West Family, Four Generations -->
+  <section class="py-24 px-8 bg-surface-container-low">
+    <div class="max-w-5xl mx-auto anim-up">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+        <div class="md:col-span-4 flex flex-col">
+          <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 self-start">1919 &ndash; 1960s</span>
+          <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+            The West Family, <span class="grad-maroon-text italic">Four Generations</span>
+          </h2>
+          <div class="hidden md:flex flex-col items-center flex-1 mt-8">
+            <div class="w-px bg-primary-container/40 flex-1 min-h-[60px]"></div>
+          </div>
+        </div>
+        <div class="md:col-span-8 space-y-6">
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            Rupert and Albert ran it through the twenties and thirties. Then the war came to Plymouth.
+          </p>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            The Blitz hit the city hard. Fifty-nine air raids between 1940 and 1944, more than 1,000 civilians killed. The workshop took damage. There's a bomb crater still visible at the original Sutton Road site today. They rebuilt. They carried on.
+          </p>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            After the war, the next generation stepped in. Derek West and his brother Rob. Derek's retirement announcement came as a surprise to everyone. He told his brother while they were driving home from work one evening. Just like that. No ceremony. That's the West way.
+          </p>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            And through all four generations, one name kept appearing on the workshop floor.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-width image break -->
+  <section class="relative h-[50vh] overflow-hidden">
+    <img class="absolute inset-0 w-full h-full object-cover" alt="Derek and Rob West at the R. West & Son workshop" src="/images/derek-rob-west.jpg" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+    <div class="absolute bottom-8 left-8 z-10">
+      <p class="font-headline text-white text-lg">Derek &amp; Rob West</p>
+      <p class="text-white/60 text-sm">Third generation</p>
+    </div>
+  </section>
+
+  <!-- George Jackson: 55 Years -->
+  <section class="py-24 px-8 bg-surface">
+    <div class="max-w-5xl mx-auto anim-up">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+        <div class="md:col-span-4 flex flex-col">
+          <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 self-start">55 Years</span>
+          <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+            George Jackson: <span class="grad-maroon-text italic">55 Years</span>
+          </h2>
+          <div class="hidden md:flex flex-col items-center flex-1 mt-8">
+            <div class="w-px bg-primary-container/40 flex-1 min-h-[60px]"></div>
+          </div>
+        </div>
+        <div class="md:col-span-8 space-y-6">
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            George Jackson worked for R. West for an incredible 55 years, across all four generations of the family.
+          </p>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            Let that sit for a moment. Fifty-five years. He saw Richard West's sons take over. He worked through the Blitz. He watched Derek and Rob grow from boys to businessmen.
+          </p>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            The world changed around him. New materials. New regulations. New markets. The workshop endured. So did George.
+          </p>
+          <p class="text-on-surface-variant text-lg leading-relaxed font-headline italic text-on-surface">
+            You don't get that kind of loyalty from a pay cheque. You get it from a place that treats the work, and the people doing it, with respect.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-width image break -->
+  <section class="relative h-[40vh] overflow-hidden">
+    <img class="absolute inset-0 w-full h-full object-cover" alt="Historical R. West & Son company photo" src="/images/history-company-old.jpg" />
+    <div class="absolute inset-0 bg-black/20"></div>
+  </section>
+
+  <!-- Jason and Angela Kennedy -->
+  <section class="py-24 px-8 bg-surface-container-low">
+    <div class="max-w-5xl mx-auto anim-up">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+        <div class="md:col-span-4 flex flex-col">
+          <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 self-start">2016</span>
+          <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+            Jason &amp; Angela Kennedy, <span class="grad-maroon-text italic">2016</span>
+          </h2>
+          <div class="hidden md:flex flex-col items-center flex-1 mt-8">
+            <div class="w-px bg-primary-container/40 flex-1 min-h-[60px]"></div>
+          </div>
+        </div>
+        <div class="md:col-span-8 space-y-6">
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            The story takes an unexpected turn in 2016.
+          </p>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            Jason Kennedy wasn't born into the West family. He was a customer. For 25 years, he brought his packing work to R. West. He knew the workshop, the team, the quality of the crates they built. When the opportunity came to take over the business in 2016, he didn't hesitate.
+          </p>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            He chose this company before he ran it. He'd seen it from the customer's side for a quarter of a century. He knew exactly what he was buying. A way of doing things that had survived world wars and four generations of family pride.
+          </p>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            Angela joined in 2019, and together they've taken the business into its next chapter. They moved from the original Sutton Road premises to Ocean Quay in 2022. A bigger workshop, better equipped, but the same commitment to building every crate for the specific item inside it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Workshop Today -->
+  <section class="py-24 px-8 bg-surface">
+    <div class="max-w-5xl mx-auto anim-up">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+        <div class="md:col-span-4 flex flex-col">
+          <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 self-start">2022 &ndash; Present</span>
+          <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+            The Workshop <span class="grad-maroon-text italic">Today</span>
+          </h2>
+          <div class="hidden md:flex flex-col items-center flex-1 mt-8">
+            <div class="w-px bg-primary-container/40 flex-1 min-h-[60px]"></div>
+          </div>
+        </div>
+        <div class="md:col-span-8 space-y-6">
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            Ocean Quay, Plymouth. The same waterfront zone as Devonport Royal Dockyard, Princess Yachts, and the growing marine technology cluster. Plymouth has the highest proportion of manufacturing jobs of any city in the south of England. This is where things get made and shipped.
+          </p>
+          <div class="grid grid-cols-2 gap-4 my-4">
+            <div class="rounded-lg overflow-hidden img-zoom">
+              <img class="w-full h-auto object-cover aspect-square" alt="CNC machine at R. West & Son" src="/images/cnc-machine-branded.jpg" />
+            </div>
+            <div class="rounded-lg overflow-hidden img-zoom">
+              <img class="w-full h-auto object-cover aspect-square" alt="Forklift in the R. West & Son warehouse" src="/images/forklift-warehouse.jpg" />
+            </div>
+          </div>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            The workshop has a CNC router that cuts foam inserts to the exact profile of each item. No gaps, no movement in transit. Heat-treatment kilns for ISPM15-compliant timber. Stacks of plywood and softwood waiting to become someone's custom crate. It smells like sawdust and looks like a place where people know what they're doing.
+          </p>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            R. West holds ISPM15 certification (audited every six months), UKWPMMP membership, and TIMCON membership. But certifications are just permission to do the work. The work itself is what matters.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Stays the Same -->
+  <section class="py-24 px-8 bg-surface-container-low">
+    <div class="max-w-5xl mx-auto anim-up">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block grad-maroon-bg text-on-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">What Endures</span>
+        <h2 class="font-headline text-4xl md:text-6xl tracking-tighter leading-none">
+          What Stays <span class="grad-maroon-text italic">the Same</span>
+        </h2>
+      </div>
+      <div class="space-y-6 max-w-3xl mx-auto">
+        <p class="text-on-surface-variant text-lg leading-relaxed">
+          The business has packed Antarctic ration boxes whose design hasn't changed since Scott's expedition. They've built crates for bronze sculptures and marine engines. Medical equipment and gaming hardware. They relocated an entire factory to China.
+        </p>
+        <p class="text-on-surface-variant text-lg leading-relaxed">
+          But ask Keith Preston, who's been trading with R. West for over a decade, and he won't talk about the range. He'll tell you the people haven't changed. The care hasn't changed. The way they answer the phone hasn't changed.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 max-w-3xl mx-auto">
+        <div class="bg-surface p-8 rounded-lg border-l-4 border-primary-container">
+          <p class="text-on-surface text-lg leading-relaxed italic font-headline mb-4">
+            "One less headache to deal with."
+          </p>
+          <p class="font-label text-sm font-bold text-primary">Steve Broadstock</p>
+          <p class="text-outline text-xs">Managing Director, British Fly Reels</p>
+        </div>
+        <div class="bg-surface p-8 rounded-lg border-l-4 border-primary-container">
+          <p class="text-on-surface text-lg leading-relaxed italic font-headline mb-4">
+            "Trusted with yacht components shipped worldwide."
+          </p>
+          <p class="font-label text-sm font-bold text-primary">Grant Hooper</p>
+          <p class="text-outline text-xs">Princess Yachts</p>
+        </div>
+      </div>
+      <p class="text-on-surface-variant text-lg leading-relaxed mt-10 max-w-3xl mx-auto text-center">
+        Names, job titles, companies. They're on the record.
+      </p>
+    </div>
+  </section>
+
+  <CtaBanner />
+  <Footer />
+</BaseLayout>
