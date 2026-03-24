@@ -11,6 +11,10 @@ export default defineConfig({
   base: '/r-west',
   integrations: [react()],
 
+  build: {
+    inlineStylesheets: 'always',
+  },
+
   vite: {
     plugins: [tailwindcss()]
   }
