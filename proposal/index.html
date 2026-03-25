@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R. West & Son — Your Website, Reimagined | Originate</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon/favicon-32x32.webp" type="image/webp">
+  <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon-180x180.webp">
+
+  <!-- Preload critical fonts -->
+  <link rel="preload" href="assets/fonts/Jost-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Preconnect CDN -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <!-- Inline font-face declarations -->
+  <style>
+    @font-face {
+      font-family: 'Jost';
+      src: url('assets/fonts/Jost-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Jost';
+      src: url('assets/fonts/Jost-Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Jost';
+      src: url('assets/fonts/Jost-MediumItalic.woff2') format('woff2');
+      font-weight: 500;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Jost';
+      src: url('assets/fonts/Jost-SemiBold.woff2') format('woff2');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+
+  <!-- Design system CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/utilities.css">
+
+  <!-- Proposal-specific styles -->
+  <link rel="stylesheet" href="css/pages/proposal.css">
+
+  <style>
+    /* Remaining items (What's next section) */
+    .proposal-remaining-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4, 1rem);
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .proposal-remaining-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-5, 1.25rem);
+      padding: var(--space-5, 1.25rem) var(--space-6, 1.5rem);
+      border-radius: var(--radius-lg, 12px);
+      background: var(--bg-card, #1A1B1C);
+    }
+    .proposal-remaining-number {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--accent, #C8A55C);
+      color: var(--bg, #0C0D0E);
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+    .proposal-remaining-item p {
+      color: var(--text-muted, #A0A0A0);
+      line-height: 1.6;
+      margin: 0;
+      padding-top: 4px;
+    }
+  </style>
+</head>
+
+<!-- CONFIG: Injected by skill agent per client -->
+<script>
+window.CONFIG = {
+  client_name: "R. West & Son",
+  client_url: "https://rwestpackagingsolutions.co.uk/",
+  contact_name: "Jason",
+
+  original_audit_url: "https://audit.weareoriginate.com/report/6d231e16-e196-43db-938a-47bdf73cbc13",
+  original_score: 66,
+  original_rating: "AVERAGE",
+  original_pillars: {
+    human_connection: 12,
+    communication: 13,
+    strategic_positioning: 13,
+    user_experience: 18,
+    design_quality: 10
+  },
+
+  preview_score: 91,
+  preview_rating: "EXCEPTIONAL",
+  preview_live_url: "https://aaronoriginate.github.io/r-west/",
+  preview_pillars: {
+    human_connection: 18,
+    communication: 20,
+    strategic_positioning: 19,
+    user_experience: 19,
+    design_quality: 15
+  },
+
+  improvements: [
+    {
+      pillar: "Communication",
+      before: 13,
+      after: 20,
+      headline: "Feature-focused corporate copy \u2192 Problem-first, audience-specific messaging",
+      detail: "Every service page was rewritten from the customer\u2019s perspective. Technical terms explained in plain English, audience explicitly named, and every page has a single focused message with benefit-driven outcomes instead of feature lists."
+    },
+    {
+      pillar: "Human Connection",
+      before: 12,
+      after: 18,
+      headline: "Company intro headline \u2192 Heritage story with real proof",
+      detail: "Added the four-generation founder story from 1910, seven named testimonials from Princess Yachts, Sagittarius, and British Fly Reels, six detailed case studies, and empathy-first copy that names the customer\u2019s frustrations before offering solutions."
+    },
+    {
+      pillar: "Strategic Positioning",
+      before: 13,
+      after: 19,
+      headline: "Generic service listing \u2192 Unmatchable specialist positioning",
+      detail: "Built a unique value proposition around heritage craftsmanship, CNC precision routing, and end-to-end service. ISPM15/TIMCON certifications and six case studies provide evidence that competitors simply can\u2019t replicate."
+    },
+    {
+      pillar: "Design Quality",
+      before: 10,
+      after: 15,
+      headline: "Dated WordPress template \u2192 Distinctive maroon brand identity",
+      detail: "Custom dot-grid hero, scroll-triggered animations, maroon gradient palette, Montserrat/Geist typography, and spacious layout replaced the original template-heavy design with a crafted, intentional brand presence."
+    }
+  ],
+
+  remaining: [
+    "Fix all broken footer links across every page",
+    "Write actual blog content for the Insights page",
+    "Add active navigation state indicator",
+    "Replace AI-generated hero images with professional photography",
+    "Add honest alternatives acknowledgement"
+  ],
+
+  remaining_intro: "Your preview scores 91/100. With your input on photography and a handful of content additions, we project a score of 96+. Here\u2019s what\u2019s still on the table.",
+
+  pagespeed: {
+    original: { mobile: 35, desktop: 65 },
+    preview: { mobile: 100, desktop: 100 }
+  },
+
+  pricing: [
+    {
+      name: "Launch & Maintain",
+      price: "\u00a347/month + VAT",
+      description: "Get the preview live on your domain with quarterly updates",
+      features: [
+        "Deploy to your domain with SSL",
+        "Uptime monitoring & backups",
+        "Quarterly content changes",
+        "Monthly performance check"
+      ]
+    },
+    {
+      name: "Launch & Grow",
+      price: "\u00a399/month + VAT",
+      featured: true,
+      description: "Everything in Launch & Maintain plus monthly updates",
+      features: [
+        "Everything in Launch & Maintain",
+        "Monthly content changes",
+        "Photography coordination",
+        "SEO fundamentals & structured data"
+      ]
+    },
+    {
+      name: "Full WordPress Build",
+      price: "\u00a3250/month \u00d7 12 + VAT",
+      description: "Complete multi-page WordPress website with full CMS control",
+      features: [
+        "Full WordPress website build",
+        "Strategic copywriting for all pages",
+        "Photography direction & coordination",
+        "<strong>12 monthly payments, then it\u2019s yours</strong>"
+      ]
+    }
+  ],
+
+  cta_url: "mailto:aaron@weareoriginate.com?subject=Let's go live \u2014 R. West %26 Son",
+  cta_text: "Let\u2019s Talk"
+};
+</script>
+
+<body data-page="proposal">
+
+  <!-- Skip to content -->
+  <a href="#main-content" class="sr-only sr-only--focusable">Skip to main content</a>
+
+  <!-- ====================================================================
+       Header / Navigation (identical to main site)
+       ==================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="https://weareoriginate.com/index.html" class="nav-logo" aria-label="Originate - home">
+          <img src="assets/images/logos/originate-logo-white.webp" alt="Originate" width="200" height="20" loading="eager">
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       Main Content
+       ==================================================================== -->
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero proposal-hero">
+      <!-- Live preview backdrop -->
+      <div class="proposal-hero-backdrop" aria-hidden="true">
+        <div class="proposal-hero-backdrop-glow"></div>
+        <div class="proposal-hero-backdrop-frame">
+          <iframe src="" id="hero-preview-iframe" title="Live preview of the rebuilt website" loading="eager" scrolling="no" tabindex="-1"></iframe>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hero-content" data-animate="fade-up">
+          <span class="hero-eyebrow" id="hero-eyebrow">Prepared for <span id="hero-client-name"></span></span>
+          <h1 class="hero-title">Your website could score <em id="hero-score"></em></h1>
+          <p class="hero-subtitle" id="hero-subtitle"></p>
+          <div class="hero-actions">
+            <a href="#score-comparison" class="btn btn--primary">See the breakdown <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="#" class="btn btn--secondary" id="hero-preview-btn" target="_blank" rel="noopener">View the live preview</a>
+          </div>
+          <div class="proposal-score-badges">
+            <div class="proposal-score-badge">
+              <div class="proposal-score-badge-value" id="hero-before-score">0</div>
+              <div class="proposal-score-badge-label">Before</div>
+            </div>
+            <div class="proposal-score-badge">
+              <div class="proposal-score-badge-value text-accent" id="hero-after-score">0</div>
+              <div class="proposal-score-badge-label">After</div>
+            </div>
+            <div class="proposal-score-badge">
+              <div class="proposal-score-badge-value text-accent" id="hero-improvement">+0</div>
+              <div class="proposal-score-badge-label">Improvement</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#score-comparison" class="proposal-hero-scroll" aria-label="Scroll down">
+        <span>Scroll down</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+
+    <!-- SCORE COMPARISON -->
+    <section class="proposal-section proposal-score-comparison" id="score-comparison">
+      <div class="container">
+        <div class="proposal-section-header" data-animate="fade-up">
+          <span class="section-pill">The numbers</span>
+          <h2>Pillar-by-pillar breakdown</h2>
+          <p>Each pillar scored out of 20, assessed against our 5 Pillar Fundamentals framework.</p>
+        </div>
+        <div class="proposal-score-grid" data-animate="fade-up">
+          <!-- Before panel -->
+          <div class="proposal-score-panel border-glow">
+            <div class="proposal-score-panel-label">YOUR CURRENT SITE</div>
+            <div class="proposal-score-panel-total">
+              <span class="proposal-score-panel-number" id="panel-before-score">0</span>
+              <span class="proposal-score-panel-max">/100</span>
+            </div>
+            <div class="proposal-score-panel-rating" id="panel-before-rating"></div>
+            <div class="proposal-pillars-list" id="pillars-before"></div>
+          </div>
+
+          <!-- Arrow -->
+          <div class="proposal-score-arrow">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="8" y1="24" x2="40" y2="24"/>
+              <polyline points="30,14 40,24 30,34"/>
+            </svg>
+          </div>
+
+          <!-- After panel -->
+          <div class="proposal-score-panel border-glow">
+            <div class="proposal-score-panel-label">OUR PREVIEW REBUILD</div>
+            <div class="proposal-score-panel-total">
+              <span class="proposal-score-panel-number text-accent" id="panel-after-score">0</span>
+              <span class="proposal-score-panel-max">/100</span>
+            </div>
+            <div class="proposal-score-panel-rating" id="panel-after-rating"></div>
+            <div class="proposal-pillars-list" id="pillars-after"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE PREVIEW -->
+    <section class="proposal-section proposal-live-preview" id="live-preview">
+      <div class="container">
+        <span class="section-pill" data-animate="fade-up">See it live</span>
+        <h2 data-animate="fade-up">This isn't a mockup</h2>
+        <p data-animate="fade-up">This is a real, working website you can click through right now.</p>
+      </div>
+      <div class="proposal-preview-wide">
+        <div class="proposal-preview-frame" data-animate="fade-up">
+          <div class="proposal-preview-frame-bar">
+            <span class="proposal-preview-dot"></span>
+            <span class="proposal-preview-dot"></span>
+            <span class="proposal-preview-dot"></span>
+            <span class="proposal-preview-url" id="preview-url"></span>
+          </div>
+          <div class="proposal-preview-body">
+            <iframe id="preview-iframe" title="Website preview" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <a href="#" class="proposal-preview-link" id="preview-external-link" target="_blank" rel="noopener">
+          Open in a new tab <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- WHAT CHANGED -->
+    <section class="proposal-section" id="what-changed">
+      <div class="container">
+        <div class="proposal-section-header proposal-section-header--left" data-animate="fade-up">
+          <span class="section-pill">What changed</span>
+          <h2>The key improvements</h2>
+          <p>Here's exactly what we did and why it matters.</p>
+        </div>
+        <div class="proposal-improvements-grid" id="improvements-grid"></div>
+      </div>
+    </section>
+
+    <!-- PAGESPEED (conditional) -->
+    <section class="proposal-section proposal-score-comparison" id="pagespeed-section" style="display:none;">
+      <div class="container">
+        <div class="proposal-section-header" data-animate="fade-up">
+          <span class="section-pill">Performance</span>
+          <h2>Faster, too</h2>
+          <p>Google PageSpeed Insights scores, tested on both mobile and desktop.</p>
+        </div>
+        <div class="proposal-pagespeed-grid" id="pagespeed-grid"></div>
+      </div>
+    </section>
+
+    <!-- WHAT'S NEXT (remaining items) -->
+    <section class="proposal-section" id="whats-next" style="display:none;">
+      <div class="container">
+        <div class="proposal-section-header" data-animate="fade-up">
+          <span class="section-pill">What's next</span>
+          <h2>The path to <em id="remaining-target-score">97</em></h2>
+          <p id="remaining-intro"></p>
+        </div>
+        <div class="proposal-remaining-list" id="remaining-list" data-animate="fade-up"></div>
+      </div>
+    </section>
+
+    <!-- THE PROCESS -->
+    <section class="proposal-section" id="the-process">
+      <div class="container">
+        <div class="proposal-section-header" data-animate="fade-up">
+          <span class="section-pill">The process</span>
+          <h2>This is a preview, not the finished article</h2>
+          <p>What you've seen is built on assumptions. We haven't had your input yet — your priorities, your customers, your voice. That's what makes the real version yours. Here's how we get there.</p>
+        </div>
+        <div class="proposal-process" data-animate="fade-up">
+          <div class="proposal-process-step">
+            <div class="proposal-process-number">1</div>
+            <h3>Book a call</h3>
+            <p>A 20-minute conversation to see if we're the right fit. No pitch, no pressure — just honest answers.</p>
+          </div>
+          <div class="proposal-process-step">
+            <div class="proposal-process-number">2</div>
+            <h3>Onboarding questionnaire</h3>
+            <p>We send you a short questionnaire covering your goals, audience, competitors, and what makes your business different. This replaces the assumptions.</p>
+          </div>
+          <div class="proposal-process-step">
+            <div class="proposal-process-number">3</div>
+            <h3>Research + positioning</h3>
+            <p>We dig into your market, analyse your competitors, and define the strategic positioning that makes your site impossible to ignore.</p>
+          </div>
+          <div class="proposal-process-step">
+            <div class="proposal-process-number">4</div>
+            <h3>Full site build with copy</h3>
+            <p>Every page written and built from scratch — informed by your real answers, not guesswork. Design, copy, and development in one pass.</p>
+          </div>
+          <div class="proposal-process-step">
+            <div class="proposal-process-number">5</div>
+            <h3>Revisions</h3>
+            <p>You review everything. We refine until you're genuinely proud of it. Two rounds of revisions included as standard.</p>
+          </div>
+          <div class="proposal-process-step">
+            <div class="proposal-process-number">6</div>
+            <h3>Go live</h3>
+            <p>We deploy to your domain, set up hosting, SSL, and monitoring. Then hand you the keys.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="proposal-section proposal-score-comparison" id="pricing">
+      <div class="container">
+        <div class="proposal-section-header" data-animate="fade-up">
+          <span class="section-pill">Next steps</span>
+          <h2>Ready to go live?</h2>
+          <p>Choose the path that fits your goals and budget.</p>
+        </div>
+        <div class="proposal-pricing-grid" id="pricing-grid"></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" id="cta">
+      <div class="container">
+        <div class="cta-bottom-card border-glow" data-animate="fade-up">
+          <div class="cta-bottom-watermark" aria-hidden="true">
+            <img src="assets/images/logos/originate-logo-keyline.webp" alt="" width="400" height="400" loading="lazy">
+          </div>
+          <div class="cta-bottom-content">
+            <h2>Ready to go live, <em>Jason?</em></h2>
+            <p>Your new site is built and scoring 91/100. One email to get it on your domain.</p>
+            <div class="cta-bottom-actions">
+              <a href="mailto:aaron@weareoriginate.com?subject=Let's go live %E2%80%94 R. West %26 Son" class="btn btn--primary">Let&#x2019;s Talk <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="https://aaronoriginate.github.io/r-west/" target="_blank" rel="noopener" class="btn btn--secondary">View the preview</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       Footer (identical to main site)
+       ==================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/images/logos/wordmark-transparent-offwhite.webp" alt="Originate" class="footer-logo-wordmark" width="180" height="18" loading="lazy">
+          <address class="footer-contact-info">
+            <p>Unit 24-25, Sovereign, Weston-super-Mare</p>
+            <p><a href="tel:+447885737705">07885 737 705</a></p>
+            <p><a href="mailto:hello@weareoriginate.com">hello@weareoriginate.com</a></p>
+          </address>
+        </div>
+
+        <div class="footer-nav-grid">
+          <div>
+            <h3 class="footer-heading">Product</h3>
+            <ul class="footer-links">
+              <li><a href="https://weareoriginate.com/index.html" class="footer-link">Home</a></li>
+              <li><a href="https://weareoriginate.com/about.html" class="footer-link">About Us</a></li>
+              <li><a href="https://weareoriginate.com/accelerator.html" class="footer-link">Accelerator</a></li>
+              <li><a href="https://weareoriginate.com/integrator.html" class="footer-link">Integrator</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-heading">Case studies</h3>
+            <ul class="footer-links">
+              <li><a href="https://weareoriginate.com/case-study-ara.html" class="footer-link">Ara Recovery for All</a></li>
+              <li><a href="https://weareoriginate.com/case-study-vanguard-tactics.html" class="footer-link">Vanguard Tactics</a></li>
+              <li><a href="https://weareoriginate.com/case-study-abbeyfield.html" class="footer-link">Abbeyfield Bristol & Keynsham</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-heading">Resources</h3>
+            <ul class="footer-links">
+              <li><a href="https://weareoriginate.com/about.html#faqs" class="footer-link">FAQs</a></li>
+              <li><a href="https://weareoriginate.com/contact.html" class="footer-link">Support</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-socials-top">
+          <a href="https://www.linkedin.com/company/105190339/" class="footer-social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/weare_originate/" class="footer-social-link" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Originate. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="https://weareoriginate.com/legal/terms.html" class="footer-link">Terms</a>
+          <a href="https://weareoriginate.com/legal/privacy.html" class="footer-link">Privacy Policy</a>
+          <a href="https://weareoriginate.com/legal/cookies.html" class="footer-link">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       Scripts
+       ==================================================================== -->
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14/dist/ScrollTrigger.min.js"></script>
+  <script defer src="js/main.js"></script>
+
+  <!-- Proposal-specific JS (CONFIG-driven data binding) -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const C = window.CONFIG;
+
+    /* Utility: Score colour class */
+    function pillarClass(score) {
+      if (score >= 17) return 'exceptional';
+      if (score >= 13) return 'strong';
+      if (score >= 9) return 'average';
+      if (score >= 5) return 'below-par';
+      return 'critical';
+    }
+
+    function overallClass(score) {
+      if (score >= 85) return 'exceptional';
+      if (score >= 68) return 'strong';
+      if (score >= 50) return 'average';
+      if (score >= 30) return 'below-par';
+      return 'critical';
+    }
+
+    function ratingLabel(score) {
+      if (score >= 85) return 'EXCEPTIONAL';
+      if (score >= 68) return 'STRONG';
+      if (score >= 50) return 'AVERAGE';
+      if (score >= 30) return 'BELOW PAR';
+      return 'CRITICAL';
+    }
+
+    var PILLAR_NAMES = {
+      human_connection: 'Human Connection',
+      communication: 'Communication',
+      strategic_positioning: 'Strategic Positioning',
+      user_experience: 'User Experience',
+      design_quality: 'Design Quality'
+    };
+
+    /* Hero */
+    document.getElementById('hero-client-name').textContent = C.client_name;
+    document.getElementById('hero-score').textContent = C.preview_score + '/100';
+    document.getElementById('hero-subtitle').textContent =
+      'We audited ' + C.client_url.replace(/^https?:\/\//, '') +
+      ' and scored it ' + C.original_score + '/100. Then we rebuilt it. Here\u2019s the result.';
+    document.getElementById('hero-preview-btn').href = C.preview_live_url;
+    document.getElementById('hero-preview-iframe').src = C.preview_live_url;
+
+    /* Scale hero iframe to fit container */
+    function scaleHeroIframe() {
+      var frame = document.querySelector('.proposal-hero-backdrop-frame');
+      if (!frame) return;
+      var scale = frame.offsetWidth / 1440;
+      frame.style.setProperty('--iframe-scale', scale);
+    }
+    scaleHeroIframe();
+    window.addEventListener('resize', scaleHeroIframe);
+
+    /* Score comparison panels */
+    function buildPillarsList(containerId, pillars) {
+      var container = document.getElementById(containerId);
+      Object.keys(PILLAR_NAMES).forEach(function(key) {
+        var score = pillars[key] || 0;
+        var cls = pillarClass(score);
+        var pct = (score / 20) * 100;
+        var row = document.createElement('div');
+        row.className = 'proposal-pillar-row';
+        row.innerHTML =
+          '<div class="proposal-pillar-row-top">' +
+            '<span class="proposal-pillar-name">' + PILLAR_NAMES[key] + '</span>' +
+            '<span class="proposal-pillar-score score-' + cls + '">' + score + '/20</span>' +
+          '</div>' +
+          '<div class="proposal-pillar-bar">' +
+            '<div class="proposal-pillar-bar-fill bar-' + cls + '" data-width="' + pct + '"></div>' +
+          '</div>';
+        container.appendChild(row);
+      });
+    }
+
+    var beforeRating = C.original_rating || ratingLabel(C.original_score);
+    document.getElementById('panel-before-rating').textContent = beforeRating;
+    document.getElementById('panel-before-rating').className = 'proposal-score-panel-rating score-' + overallClass(C.original_score);
+    buildPillarsList('pillars-before', C.original_pillars);
+
+    var afterRating = C.preview_rating || ratingLabel(C.preview_score);
+    document.getElementById('panel-after-rating').textContent = afterRating;
+    document.getElementById('panel-after-rating').className = 'proposal-score-panel-rating score-' + overallClass(C.preview_score);
+    buildPillarsList('pillars-after', C.preview_pillars);
+
+    /* Live preview iframe */
+    document.getElementById('preview-url').textContent = C.preview_live_url;
+    document.getElementById('preview-iframe').src = C.preview_live_url;
+    document.getElementById('preview-external-link').href = C.preview_live_url;
+
+    /* Improvements */
+    var improvGrid = document.getElementById('improvements-grid');
+    C.improvements.forEach(function(item, i) {
+      var card = document.createElement('div');
+      card.className = 'proposal-improvement-card border-glow';
+      card.setAttribute('data-animate', 'fade-up');
+      card.innerHTML =
+        '<div class="proposal-improvement-score">' +
+          '<div class="proposal-improvement-score-change">' +
+            '<span class="proposal-improvement-score-num score-' + pillarClass(item.before) + '">' + item.before + '</span>' +
+            '<span class="proposal-improvement-arrow">\u2192</span>' +
+            '<span class="proposal-improvement-score-num score-' + pillarClass(item.after) + '">' + item.after + '</span>' +
+          '</div>' +
+          '<span class="proposal-improvement-pillar-label">' + item.pillar + '</span>' +
+        '</div>' +
+        '<div class="proposal-improvement-body">' +
+          '<h3>' + item.headline + '</h3>' +
+          '<p>' + item.detail + '</p>' +
+        '</div>';
+      improvGrid.appendChild(card);
+    });
+
+    /* PageSpeed (optional) */
+    if (C.pagespeed && C.pagespeed.original && C.pagespeed.preview) {
+      document.getElementById('pagespeed-section').style.display = '';
+      var psGrid = document.getElementById('pagespeed-grid');
+
+      ['mobile', 'desktop'].forEach(function(device) {
+        var origScore = C.pagespeed.original[device];
+        var pocScore = C.pagespeed.preview[device];
+        if (origScore == null && pocScore == null) return;
+
+        var card = document.createElement('div');
+        card.className = 'proposal-pagespeed-card';
+        card.setAttribute('data-animate', 'fade-up');
+        card.innerHTML =
+          '<div class="proposal-pagespeed-card-label">' + device.toUpperCase() + '</div>' +
+          '<div class="proposal-pagespeed-scores">' +
+            '<div class="proposal-pagespeed-score-item">' +
+              '<div class="proposal-pagespeed-score-num score-' + (origScore >= 90 ? 'strong' : origScore >= 50 ? 'average' : 'critical') + '" data-count="' + origScore + '">0</div>' +
+              '<div class="proposal-pagespeed-score-sub">Before</div>' +
+            '</div>' +
+            '<div class="proposal-pagespeed-arrow">\u2192</div>' +
+            '<div class="proposal-pagespeed-score-item">' +
+              '<div class="proposal-pagespeed-score-num score-' + (pocScore >= 90 ? 'exceptional' : pocScore >= 50 ? 'average' : 'critical') + '" data-count="' + pocScore + '">0</div>' +
+              '<div class="proposal-pagespeed-score-sub">After</div>' +
+            '</div>' +
+          '</div>';
+        psGrid.appendChild(card);
+      });
+    }
+
+    /* What's next (remaining items) */
+    if (C.remaining && C.remaining.length > 0) {
+      document.getElementById('whats-next').style.display = '';
+      var introText = C.remaining_intro || 'Here\u2019s what we\u2019d tackle next with your input.';
+      document.getElementById('remaining-intro').textContent = introText;
+
+      var remainList = document.getElementById('remaining-list');
+      C.remaining.forEach(function(item, i) {
+        var row = document.createElement('div');
+        row.className = 'proposal-remaining-item border-glow';
+        row.innerHTML =
+          '<div class="proposal-remaining-number">' + (i + 1) + '</div>' +
+          '<p>' + item + '</p>';
+        remainList.appendChild(row);
+      });
+    }
+
+    /* Pricing */
+    var pricingGrid = document.getElementById('pricing-grid');
+    C.pricing.forEach(function(tier, i) {
+      var card = document.createElement('div');
+      card.className = 'proposal-pricing-card border-glow' + (tier.featured ? ' proposal-pricing-card--featured' : '');
+      card.setAttribute('data-animate', 'fade-up');
+
+      var html = '';
+      if (tier.featured) {
+        html += '<span class="proposal-pricing-badge">Recommended</span>';
+      }
+      html += '<h3>' + tier.name + '</h3>';
+      html += '<div class="proposal-pricing-price">' + tier.price + '</div>';
+      html += '<p class="proposal-pricing-description">' + tier.description + '</p>';
+      html += '<ul class="proposal-pricing-features">';
+      tier.features.forEach(function(f) {
+        html += '<li>' + f + '</li>';
+      });
+      html += '</ul>';
+
+      card.innerHTML = html;
+      pricingGrid.appendChild(card);
+    });
+
+    /* Animated counters */
+    function animateCounter(el, target, duration) {
+      var start = null;
+      function step(ts) {
+        if (!start) start = ts;
+        var progress = Math.min((ts - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(target * eased);
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+
+    /* Hero score counters (animate on load) */
+    setTimeout(function() {
+      animateCounter(document.getElementById('hero-before-score'), C.original_score, 1400);
+      animateCounter(document.getElementById('hero-after-score'), C.preview_score, 1800);
+
+      var improvEl = document.getElementById('hero-improvement');
+      var improvTarget = C.preview_score - C.original_score;
+      var improvStart = null;
+      function improvStep(ts) {
+        if (!improvStart) improvStart = ts;
+        var progress = Math.min((ts - improvStart) / 1800, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        improvEl.textContent = '+' + Math.round(improvTarget * eased);
+        if (progress < 1) requestAnimationFrame(improvStep);
+      }
+      requestAnimationFrame(improvStep);
+    }, 600);
+
+    /* Panel score counters + pillar bar fills (triggered by scroll) */
+    var panelObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          /* Animate the total score counter */
+          var scoreEl = entry.target.querySelector('.proposal-score-panel-number');
+          if (scoreEl && !scoreEl._animated) {
+            var isAfter = scoreEl.id === 'panel-after-score';
+            animateCounter(scoreEl, isAfter ? C.preview_score : C.original_score, 1600);
+            scoreEl._animated = true;
+          }
+          /* Fill pillar bars */
+          entry.target.querySelectorAll('.proposal-pillar-bar-fill').forEach(function(bar) {
+            var w = bar.getAttribute('data-width');
+            if (w) bar.style.width = w + '%';
+          });
+          panelObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.proposal-score-panel').forEach(function(panel) {
+      panelObserver.observe(panel);
+    });
+
+    /* Init border glow on dynamically created cards */
+    initBorderGlow();
+  });
+
+  /* Border glow — inline version (cards are dynamic so can't use deferred script) */
+  function initBorderGlow() {
+    if (window.innerWidth < 768) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    var PROXIMITY_THRESHOLD = 250;
+    var elements = document.querySelectorAll('.border-glow');
+    if (!elements.length) return;
+
+    var mouseX = -9999;
+    var mouseY = -9999;
+    var ticking = false;
+
+    document.addEventListener('mousemove', function(e) {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(updateGlow);
+      }
+    });
+
+    function updateGlow() {
+      elements.forEach(function(el) {
+        var rect = el.getBoundingClientRect();
+        var closestX = Math.max(rect.left, Math.min(mouseX, rect.right));
+        var closestY = Math.max(rect.top, Math.min(mouseY, rect.bottom));
+        var dist = Math.hypot(mouseX - closestX, mouseY - closestY);
+
+        if (dist < PROXIMITY_THRESHOLD) {
+          var proximity = 1 - dist / PROXIMITY_THRESHOLD;
+          el.style.setProperty('--xPos', (mouseX - rect.left) + 'px');
+          el.style.setProperty('--yPos', (mouseY - rect.top) + 'px');
+          el.style.setProperty('--proximity', proximity.toFixed(2));
+        } else {
+          el.style.setProperty('--proximity', '0');
+        }
+      });
+      ticking = false;
+    }
+  }
+  </script>
+
+
+</body>
+</html>
