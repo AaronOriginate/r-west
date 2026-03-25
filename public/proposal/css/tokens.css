@@ -1,0 +1,98 @@
+/* ==========================================================================
+   Design Tokens — Originate
+   All visual values as CSS custom properties. No selectors beyond :root.
+   ========================================================================== */
+
+:root {
+  /* --- Colours --- */
+  --color-bg: #0C0D0E;
+  --color-bg-elevated: #141516;
+  --color-bg-card: #1A1B1C;
+  --color-accent: #E9F469;
+  --color-accent-hover: #f0f88a;
+  --color-text: #FFFFFF;
+  --color-text-muted: #A0A0A0;
+  --color-text-on-accent: #0C0D0E;
+  --color-border: #2A2B2C;
+  --color-success: #4ADE80;
+  --color-error: #F87171;
+
+  /* --- Typography --- */
+  --font-family: 'Jost', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-size-4xl: 3.5rem;
+  --font-size-5xl: 4.5rem;
+
+  /* --- Spacing --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* --- Layout --- */
+  --max-width: 1400px;
+  --max-width-narrow: 800px;
+  --container-pad: var(--space-6);
+  --section-pad-y: var(--space-20);
+
+  /* --- Motion --- */
+  --ease-bounce: cubic-bezier(0.48, 0.16, 0.2, 1.21);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 400ms;
+  --duration-slow: 600ms;
+
+  /* --- Borders --- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* --- Shadows --- */
+  --shadow-card: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-elevated: 0 8px 24px rgba(0, 0, 0, 0.4);
+
+  /* --- Z-index --- */
+  --z-base: 1;
+  --z-dropdown: 10;
+  --z-sticky: 50;
+  --z-overlay: 100;
+  --z-modal: 200;
+  --z-toast: 300;
+}
+
+/* --- Responsive overrides: Tablet and below --- */
+@media (max-width: 768px) {
+  :root {
+    --font-size-4xl: 2.5rem;
+    --font-size-5xl: 3rem;
+    --section-pad-y: var(--space-16);
+    --container-pad: var(--space-4);
+  }
+}
+
+/* --- Responsive overrides: Small mobile --- */
+@media (max-width: 480px) {
+  :root {
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2rem;
+    --font-size-5xl: 2.5rem;
+    --container-pad: var(--space-3);
+  }
+}
